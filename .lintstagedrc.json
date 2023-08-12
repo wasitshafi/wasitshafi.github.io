@@ -1,6 +1,5 @@
 {
-  "*.{html,ts,scss,css}": [
-    "prettier --write",
+  "!(docs/*).{html,ts,scss,css}": [
     "eslint"
   ]
 }

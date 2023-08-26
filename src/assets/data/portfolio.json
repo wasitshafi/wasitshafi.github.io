@@ -1,0 +1,59 @@
+{
+	"achievements": [],
+	"awardsAndCertifications": [],
+	"codingAndSocialProfiles": [],
+	"education": [],
+	"personalProjects": [],
+	"skills": [],
+	"workExperience": [
+		{
+			"companyDetails": {
+				"city": "Doha",
+				"companyName": "Cashmere Trading",
+				"companyWebsiteUrl": "https://www.cashmeretrading.com/",
+				"country": "Qatar"
+			},
+			"endDate": "",
+			"isCurrentlyWorking": true,
+			"role": "Full Stack SDE",
+			"startDate": "",
+			"workContributions": ["Current Working Technologies: MEAN Stack"]
+		},
+		{
+			"companyDetails": {
+				"city": "Noida",
+				"companyName": "VectoScalar Technologies",
+				"companyWebsiteUrl": "https://vectoscalar.com/",
+				"country": "India"
+			},
+			"endDate": "Aug 2022",
+			"isCurrentlyWorking": false,
+			"role": "Software Engineer",
+			"startDate": "July 2021",
+			"workContributions": [
+				"Worked on Web Animations API to develop 30-40 poker game & application UI animations for cards, themes, tournaments, etc.",
+				"Developed well-structured react components & managed the state of application using MobX-State-Tree.",
+				"Worked on more than 50 minor/critical bugs & improvement tasks which results in performance benefits.",
+				"Trained & mentored 40 software engineering interns on JavaScript/TypeScript, React.js, SCSS, Analysis & Designing Aspects, Application State Management, Routing, etc."
+			]
+		},
+		{
+			"companyDetails": {
+				"city": "Noida",
+				"companyName": "VectoScalar Technologies",
+				"companyWebsiteUrl": "https://vectoscalar.com/",
+				"country": "India"
+			},
+			"endDate": "June 2021",
+			"isCurrentlyWorking": false,
+			"role": "Software Engineer Intern",
+			"startDate": "Jan 2021",
+			"workContributions": [
+				"Worked on code refactoring across the project for enhancing the codebase quality.",
+				"Found & solved several bugs like ESLint, WebStrom IDE errors & warnings, UI bugs, etc.",
+				"Developed more than 20 React UI components.",
+				"Learned & worked with libraries/frameworks such as React.js, React Native, Redux, React Router, SCSS, Material UI, Styled Components, etc."
+			]
+		}
+	]
+}

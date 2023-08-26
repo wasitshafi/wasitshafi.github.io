@@ -8,4 +8,6 @@ export class Constants {
 		AWARDS_AND_CERTIFICATIONS: 'AWARDS-AND-CERTIFICATIONS',
 		CODING_AND_SOCIAL_PROFILES: 'CODING-AND-SOCIAL-PROFILES',
 	};
+
+	public PORTFOLIO_DATA_URL = '/assets/data/portfolio.json';
 }

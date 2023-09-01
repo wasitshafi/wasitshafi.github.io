@@ -1,6 +1,11 @@
 <div class="ws-home-wrapper">
 	<section id="{{ constants.homeSectionLinksId.WORK_EXPERIENCE }}">
-		Work Experience Section
+		<div *ngFor="let workExperience of portfolioData.workExperience">
+			<span>{{ workExperience.role }}</span>
+			<div *ngFor="let contributions of workExperience.workContributions">
+				<div>* {{ contributions }}</div>
+			</div>
+		</div>
 	</section>
 	<section id="{{ constants.homeSectionLinksId.SKILLS }}">
 		Skills Section

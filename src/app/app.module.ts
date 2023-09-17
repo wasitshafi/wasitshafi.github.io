@@ -13,15 +13,16 @@ import { Constants } from './common/constants';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 
 @NgModule({
+	// Note: declarations/imports/providers/bootstrap should be in sorted order
 	declarations: [
 		AppComponent,
-		HomeComponent,
 		FooterComponent,
 		HeaderComponent,
+		HomeComponent,
 		NavComponent,
 		WorkExperienceComponent,
 	],
-	imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+	imports: [AppRoutingModule, BrowserModule, HttpClientModule],
 	providers: [Constants],
 	bootstrap: [AppComponent],
 })

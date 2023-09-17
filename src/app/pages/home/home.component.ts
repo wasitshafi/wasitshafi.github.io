@@ -1,31 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-
-import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
 
 import { Constants } from '../../common/constants';
+import { UserProfileService } from '../../services/user-profile/user-profile.service';
 
 @Component({
 	selector: 'app-home',
 	templateUrl: './home.component.html',
 	styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
-	public portfolioData: any;
-
+export class HomeComponent {
 	public constructor(
 		public constants: Constants,
-		private httpClient: HttpClient
+		public userProfile: UserProfileService
 	) {}
-
-	public ngOnInit(): void {
-		this.getData(this.constants.PORTFOLIO_DATA_URL).subscribe((data: any) => {
-			console.log(data);
-			this.portfolioData = data;
-		});
-	}
-
-	// TODO: create a service
-	private getData(url: string) {
-		return this.httpClient.get(url);
-	}
 }

@@ -10,6 +10,7 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { NavComponent } from './layouts/header/nav/nav.component';
 
 import { Constants } from './common/constants';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 
 @NgModule({
 	declarations: [
@@ -18,6 +19,7 @@ import { Constants } from './common/constants';
 		FooterComponent,
 		HeaderComponent,
 		NavComponent,
+		WorkExperienceComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule, HttpClientModule],
 	providers: [Constants],

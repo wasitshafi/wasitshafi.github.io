@@ -1,27 +1,28 @@
 <div class="ws-home-wrapper">
-	<section id="{{ constants.homeSectionLinksId.WORK_EXPERIENCE }}">
-		<div *ngFor="let workExperience of portfolioData.workExperience">
-			<span>{{ workExperience.role }}</span>
-			<div *ngFor="let contributions of workExperience.workContributions">
-				<div>* {{ contributions }}</div>
-			</div>
-		</div>
-	</section>
+	<app-work-experience></app-work-experience>
+
 	<section id="{{ constants.homeSectionLinksId.SKILLS }}">
 		Skills Section
 	</section>
+
 	<section id="{{ constants.homeSectionLinksId.PERSONAL_PROJECTS }}">
 		Personal Projects Section
 	</section>
+
 	<section id="{{ constants.homeSectionLinksId.EDUCATION }}">
 		Education Section
 	</section>
-	<section id="{{ constants.homeSectionLinksId.ACHIEVEMENTS }}">
-		Achievements Section
+
+	<section
+		id="{{ constants.homeSectionLinksId.ACHIEVEMENTS_AND_RESPONSIBILITIES }}"
+	>
+		Achievements & Responsibilities Section
 	</section>
+
 	<section id="{{ constants.homeSectionLinksId.AWARDS_AND_CERTIFICATIONS }}">
 		Awards And Certification Section
 	</section>
+
 	<section id="{{ constants.homeSectionLinksId.CODING_AND_SOCIAL_PROFILES }}">
 		Coding And Social Profiles Section
 	</section>

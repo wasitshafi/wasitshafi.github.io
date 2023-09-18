@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { Constants } from '../../common/constants';
-import { UserProfileService } from '../../services/user-profile/user-profile.service';
+import { Constants } from '@common/constants';
+import { UserProfileService } from '@services/user-profile/user-profile.service';
 
 @Component({
 	selector: 'app-home',

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Constants } from 'src/app/common/constants';
+
+import { Constants } from '@common/constants';
 
 @Component({
 	selector: 'app-nav',

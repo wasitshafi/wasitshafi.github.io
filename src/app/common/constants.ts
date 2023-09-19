@@ -1,4 +1,5 @@
 export class Constants {
+	//
 	public homeSectionLinksId = {
 		WORK_EXPERIENCE: 'WORK-EXPERIENCE',
 		SKILLS: 'SKILLS',
@@ -10,4 +11,7 @@ export class Constants {
 	};
 
 	public PORTFOLIO_DATA_URL = '/assets/data/portfolio.json';
+
+	// default prefix for css class names to avoid collisions with bootstrap classes
+	public wsw = 'wsw-';
 }

@@ -1,12 +1,10 @@
-@import 'main.scss';
+@use 'main.scss' as *;
 
 .#{$wsw}home-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	// border: 1px solid red;
-	// color: yellow;
 
 	section {
 		border: 1px solid #808080;

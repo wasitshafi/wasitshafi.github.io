@@ -1,16 +1,6 @@
-@import 'main.scss';
+@use 'main.scss' as *;
 
-// :host {
-// 	position: fixed;
-// 	top: 100vh;
-// 	transform: translateY(-100%);
-// }
-
-// .ws-footer-wrapper {
-// 	margin-bottom: 10px;
-// }
-
-.ws-footer-wrapper {
-	background-color: rgba($clr-black, 0.05);
+.#{$wsw}footer-wrapper {
 	text-align: center;
+	margin: 15px 0;
 }

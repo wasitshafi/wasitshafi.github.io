@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+// NOTE: prefix '$fs-' for all the font size variables/maps
+
+$fs-html: 16px;
+
+// fn-strip-unit()  referred from : https://css-tricks.com/snippets/sass/strip-unit-function
+@function fn-strip-unit($var-number) {
+	@if type-of($var-number) == 'number' and not unitless($var-number) {
+		@return math.div($var-number, ($var-number * 0 + 1));
+	}
+
+	@return $var-number;
+}
+
+// TODO: add support for other units like %, vh, vw etc once alpha version is released
+@function fn-rem($var-size) {
+	@if (not(unit($var-size) == 'px')) {
+		@error ("unit should be 'px' or invalid argument, as of now only supports to 'px' -> 'rem' conversion, $var-size = #{$var-size}");
+	}
+	@return math.div(fn-strip-unit($var-size), fn-strip-unit($fs-html)) * 1rem;
+}

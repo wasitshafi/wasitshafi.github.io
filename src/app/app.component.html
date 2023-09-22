@@ -1,2 +1,17 @@
-<app-home></app-home>
-<router-outlet></router-outlet>
+<!-- TODO: Remove once portfolio website alpha version is ready -->
+<section class="{{ constants.wsw }}temp-section">
+	<p class="{{ constants.wsw }}fallback-text">
+		Thanks for your time & visiting here, portfolio website under development.
+	</p>
+	<span
+		>For Any query, drop me a line at
+		<a href="mailto:wasitshafi700@gmail.com">wasitshafi700@gmail.com</a></span
+	>
+</section>
+<div class="{{ constants.wsw }}app-wrapper">
+	<app-header> </app-header>
+	<main>
+		<router-outlet></router-outlet>
+	</main>
+	<app-footer></app-footer>
+</div>

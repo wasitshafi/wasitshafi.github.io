@@ -1,0 +1,17 @@
+@use 'main.scss' as *;
+
+.#{$wsw}home-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	section {
+		border: 1px solid #808080;
+		background-color: whitesmoke;
+		width: 100%;
+		min-height: 300px;
+		border-radius: 4px;
+		margin-bottom: 20px;
+	}
+}

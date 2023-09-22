@@ -1,0 +1,24 @@
+@use 'main.scss' as *;
+
+@font-face {
+	font-family: alegreya;
+	src: url('assets/fonts/alegreya-regular.ttf');
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: $fs-html;
+}
+
+// reset some css properties across application
+* {
+	font-family: 'alegreya', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	color: $clr-black;
+	font-size: fn-rem(16px);
+	font-weight: 400;
+}

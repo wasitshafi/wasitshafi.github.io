@@ -1,0 +1,7 @@
+export * from './achievements-and-responsibilities/achievements-and-responsibilities.component';
+export * from './awards-and-certifications/awards-and-certifications.component';
+export * from './coding-and-social-profiles/coding-and-social-profiles.component';
+export * from './education/education.component';
+export * from './personal-projects/personal-projects.component';
+export * from './skills/skills.component';
+export * from './work-experience/work-experience.component';

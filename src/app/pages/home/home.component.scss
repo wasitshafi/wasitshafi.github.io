@@ -1,6 +1,6 @@
 @use 'main.scss' as *;
 
-.#{$wsw}home-wrapper {
+.#{$style-prefix}home-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

@@ -5,23 +5,25 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// @pages
+import { HomeComponent } from '@pages';
+
 // @layouts
-import { HomeComponent } from '@pages/home/home.component';
-import { FooterComponent } from '@layouts/footer/footer.component';
-import { HeaderComponent } from '@layouts/header/header.component';
-import { NavComponent } from '@layouts/header/nav/nav.component';
+import { FooterComponent, HeaderComponent, NavComponent } from '@layouts';
 
 // @common
 import { Constants } from '@common/constants';
 
 // @components
-import { WorkExperienceComponent } from '@components/work-experience/work-experience.component';
-import { SkillsComponent } from '@components/skills/skills.component';
-import { PersonalProjectsComponent } from '@components/personal-projects/personal-projects.component';
-import { EducationComponent } from '@components/education/education.component';
-import { AchievementsAndResponsibilitiesComponent } from '@components/achievements-and-responsibilities/achievements-and-responsibilities.component';
-import { AwardsAndCertificationsComponent } from '@components/awards-and-certifications/awards-and-certifications.component';
-import { CodingAndSocialProfilesComponent } from '@components/coding-and-social-profiles/coding-and-social-profiles.component';
+import {
+	AchievementsAndResponsibilitiesComponent,
+	AwardsAndCertificationsComponent,
+	CodingAndSocialProfilesComponent,
+	EducationComponent,
+	WorkExperienceComponent,
+	SkillsComponent,
+	PersonalProjectsComponent,
+} from '@components';
 
 @NgModule({
 	// Note: declarations/imports/providers/bootstrap should be in sorted order

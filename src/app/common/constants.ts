@@ -13,5 +13,5 @@ export class Constants {
 	public PORTFOLIO_DATA_URL = '/assets/data/portfolio.json';
 
 	// default prefix for css class names to avoid collisions with bootstrap classes
-	public wsw = 'wsw-';
+	public STYLE_PREFIX = 'wsw-';
 }

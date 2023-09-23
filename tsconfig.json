@@ -7,13 +7,21 @@
 			"@assets/*": ["src/assets/*"],
 			"@app/*": ["src/app/*"],
 			"@common/*": ["src/app/common/*"],
+			"@common": ["src/app/common"],
 			"@components/*": ["src/app/components/*"],
+			"@components": ["src/app/components"],
 			"@layouts/*": ["src/app/layouts/*"],
+			"@layouts": ["src/app/layouts"],
 			"@models/*": ["src/app/models/*"],
+			"@models": ["src/app/models"],
 			"@pages/*": ["src/app/pages/*"],
+			"@pages": ["src/app/pages"],
 			"@pipes/*": ["src/app/pipes/*"],
+			"@pipes": ["src/app/pipes"],
 			"@services/*": ["src/app/services/*"],
-			"@utils/*": ["src/app/utils/*"]
+			"@services": ["src/app/services"],
+			"@utils/*": ["src/app/utils/*"],
+			"@utils": ["src/app/utils"]
 		},
 		"outDir": "./dist/out-tsc",
 		"forceConsistentCasingInFileNames": true,
@@ -40,6 +48,5 @@
 		"strictInjectionParameters": true,
 		"strictInputAccessModifiers": true,
 		"strictTemplates": true
-	},
-
+	}
 }

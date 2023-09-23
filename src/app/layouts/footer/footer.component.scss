@@ -1,6 +1,6 @@
 @use 'main.scss' as *;
 
-.#{$wsw}footer-wrapper {
+.#{$style-prefix}footer-wrapper {
 	text-align: center;
 	margin: 15px 0;
 }

@@ -5,13 +5,25 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	.#{$style-prefix}home-content {
+		padding: 16px;
 
-	section {
-		border: 1px solid #808080;
-		background-color: whitesmoke;
-		width: 100%;
-		min-height: 300px;
-		border-radius: 4px;
-		margin-bottom: 20px;
+		section {
+			border: 1px solid #808080;
+			background-color: whitesmoke;
+			width: 100%;
+			min-height: 300px;
+			border-radius: 4px;
+			margin-bottom: 20px;
+		}
 	}
 }
+
+// @include media-breakpoint-up(xl) {
+// 	.#{$style-prefix}home-wrapper {
+// 		.#{$style-prefix}home-content {
+// 			padding-left: 0;
+// 			padding-right: 0;
+// 		}
+// 	}
+// }

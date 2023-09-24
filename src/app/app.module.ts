@@ -16,30 +16,34 @@ import { Constants } from '@common/constants';
 
 // @components
 import {
+	AboutComponent,
 	AchievementsAndResponsibilitiesComponent,
 	AwardsAndCertificationsComponent,
 	CodingAndSocialProfilesComponent,
+	ContactComponent,
 	EducationComponent,
-	WorkExperienceComponent,
-	SkillsComponent,
 	PersonalProjectsComponent,
+	SkillsComponent,
+	WorkExperienceComponent,
 } from '@components';
 
 @NgModule({
 	// Note: declarations/imports/providers/bootstrap should be in sorted order
 	declarations: [
+		AboutComponent,
+		AchievementsAndResponsibilitiesComponent,
 		AppComponent,
+		AwardsAndCertificationsComponent,
+		CodingAndSocialProfilesComponent,
+		ContactComponent,
+		EducationComponent,
 		FooterComponent,
 		HeaderComponent,
 		HomeComponent,
 		NavComponent,
-		WorkExperienceComponent,
-		SkillsComponent,
 		PersonalProjectsComponent,
-		EducationComponent,
-		AchievementsAndResponsibilitiesComponent,
-		AwardsAndCertificationsComponent,
-		CodingAndSocialProfilesComponent,
+		SkillsComponent,
+		WorkExperienceComponent,
 	],
 	imports: [AppRoutingModule, BrowserModule, HttpClientModule],
 	providers: [Constants],

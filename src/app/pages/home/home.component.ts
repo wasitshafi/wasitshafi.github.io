@@ -6,7 +6,7 @@ import { UserProfileService } from '@services';
 @Component({
 	selector: 'app-home',
 	templateUrl: './home.component.html',
-	styleUrls: ['./home.component.scss'],
+	styleUrls: ['./home.component.scss', './home-responsive.component.scss'],
 })
 export class HomeComponent {
 	public constructor(

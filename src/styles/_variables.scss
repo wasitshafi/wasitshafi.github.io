@@ -2,3 +2,29 @@
 
 // default prefix for css class names to avoid collisions with bootstrap classes
 $style-prefix: 'wsw-';
+
+$var-bs-breakpoints: (
+	// Extra Small (Note: In Bootstrap there is no class prefix/infix for the extra small/xs)
+	'xs-min': 0px,
+	'xs-max': 575px,
+
+	// Small
+	'sm-min': 576px,
+	'sm-max': 767px,
+
+	// Medium
+	'md-min': 768px,
+	'md-max': 991px,
+
+	// Large
+	'lg-min': 992px,
+	'lg-max': 1199px,
+
+	// Extra Large
+	'xl-min': 1200px,
+	'xl-max': 1399px,
+
+	// Extra Extra Large
+	'xxl': 1400px,
+	'xxl-min': 1400px
+);

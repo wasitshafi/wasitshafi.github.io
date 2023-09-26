@@ -1,0 +1,11 @@
+@use 'sass:map';
+@use './_variables.scss' as *;
+
+@function fn-get-bs-breakpoints($key) {
+	@if not map-has-key($var-bs-breakpoints, $key) {
+		@error "NO VALUE FOUND FOR THE KEY '#{$key}' IN '$var-bs-breakpoints' MAP. PLEASE VERIFY THE CORRECT KEY NAME.";
+	}
+
+	// will return null if the $key is not present in $var-bs-breakpoints
+	@return map.get($var-bs-breakpoints, $key);
+}

@@ -5,9 +5,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	.#{$style-prefix}home-content {
-		padding: 16px;
+	padding: 0 8px;
 
+	.#{$style-prefix}home-content {
+		padding: 0;
 		section {
 			border: 1px solid #808080;
 			background-color: whitesmoke;
@@ -18,12 +19,3 @@
 		}
 	}
 }
-
-// @include media-breakpoint-up(xl) {
-// 	.#{$style-prefix}home-wrapper {
-// 		.#{$style-prefix}home-content {
-// 			padding-left: 0;
-// 			padding-right: 0;
-// 		}
-// 	}
-// }

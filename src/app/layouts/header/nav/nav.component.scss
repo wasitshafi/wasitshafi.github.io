@@ -1,14 +1,17 @@
 @use 'main.scss' as *;
 
 .navbar {
-	background-color: whitesmoke;
-
 	.container-fluid {
 		padding-left: 0;
 		padding-right: 0;
 
 		.navbar-toggler {
+			border: none;
 			.navbar-toggler-icon {
+				background-image: var(--img-navbar-toggler);
+			}
+			&:focus {
+				box-shadow: none;
 			}
 		}
 		.collapse {
@@ -16,6 +19,8 @@
 				margin: 0 auto;
 				.nav-item {
 					.nav-link {
+						background-color: var(--clr-primary-background);
+						color: var(--clr-primary-font);
 						&:hover {
 							text-decoration: underline;
 							opacity: 0.7;

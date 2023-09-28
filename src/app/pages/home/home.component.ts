@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Constants } from '@common';
-import { UserProfileService } from '@services';
+import { UserProfileService, AppDataService } from '@services';
 
 @Component({
 	selector: 'app-home',
@@ -10,7 +10,9 @@ import { UserProfileService } from '@services';
 })
 export class HomeComponent {
 	public constructor(
+		public appDataService: AppDataService,
 		public constants: Constants,
+
 		public userProfile: UserProfileService
 	) {}
 }

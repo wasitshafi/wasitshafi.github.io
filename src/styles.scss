@@ -22,3 +22,23 @@ html {
 	font-size: fn-rem(16px);
 	font-weight: 400;
 }
+
+// TODO: check how can we define these variables from individual components styles files
+// Refer why used interpolation to access scss variables : https://github.com/sass/libsass/issues/2621
+:root {
+	// colors
+	--clr-primary-background: #{$clr-soap-stone};
+	--clr-primary-font: #{$clr-wood-smoke};
+
+	// images
+	--img-navbar-toggler: url('./assets/images/navbar-toggler-dark-icon.svg');
+}
+
+body.#{$style-prefix}dark-theme {
+	// colors
+	--clr-primary-background: #{$clr-wood-smoke};
+	--clr-primary-font: #{$clr-soap-stone};
+
+	// images
+	--img-navbar-toggler: url('./assets/images/navbar-toggler-light-icon.svg');
+}

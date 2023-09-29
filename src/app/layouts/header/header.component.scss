@@ -2,7 +2,8 @@
 
 .#{$style-prefix}header-wrapper {
 	background-color: var(--clr-primary-background);
-	position: relative;
+	position: sticky;
+	top: 0;
 
 	.form-check.form-switch {
 		position: absolute;

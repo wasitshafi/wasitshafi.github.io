@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 
 import { Constants } from '@common/constants';
 
+// services
+import { AppDataService } from '@services';
+
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
@@ -10,5 +13,8 @@ import { Constants } from '@common/constants';
 export class AppComponent {
 	title = 'portfolio';
 
-	constructor(public constants: Constants) {}
+	constructor(
+		public constants: Constants,
+		public appDataService: AppDataService
+	) {}
 }

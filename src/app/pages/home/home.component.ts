@@ -13,6 +13,6 @@ export class HomeComponent {
 		public appDataService: AppDataService,
 		public constants: Constants,
 
-		public userProfile: UserProfileService
+		public userProfileService: UserProfileService
 	) {}
 }

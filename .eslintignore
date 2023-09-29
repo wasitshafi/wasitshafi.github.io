@@ -3,3 +3,4 @@
 /vscode
 /angular
 package-lock.json
+*.scss

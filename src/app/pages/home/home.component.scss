@@ -9,9 +9,11 @@
 
 	.#{$style-prefix}home-content {
 		padding: 0;
+
 		section {
-			border: 1px solid #808080;
-			background-color: whitesmoke;
+			border: 1px solid $clr-wood-smoke;
+			background-color: $clr-soap-stone;
+			color: $clr-wood-smoke;
 			width: 100%;
 			min-height: 300px;
 			border-radius: 4px;

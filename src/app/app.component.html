@@ -1,5 +1,8 @@
 <!-- TODO: Remove once portfolio website alpha version is ready -->
-<section class="{{ constants.STYLE_PREFIX }}temp-section">
+<section
+	*ngIf="appDataService.isProdEnv"
+	class="{{ constants.STYLE_PREFIX }}temp-section"
+>
 	<p class="{{ constants.STYLE_PREFIX }}fallback-text">
 		Thanks for your time & visiting here, portfolio website under development.
 	</p>
@@ -8,6 +11,7 @@
 		<a href="mailto:wasitshafi700@gmail.com">wasitshafi700@gmail.com</a></span
 	>
 </section>
+
 <div class="{{ constants.STYLE_PREFIX }}app-wrapper">
 	<app-header> </app-header>
 	<main>

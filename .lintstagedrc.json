@@ -1,5 +1,4 @@
 {
-  "!(docs/*).{html,ts,scss,css}": [
-    "eslint", "prettier --write"
-  ]
+	"!(docs/*).{html,ts}": ["eslint", "prettier --write"],
+	"!(docs/*).{scss}": ["prettier --write", "stylelint \"**/*.scss\""]
 }

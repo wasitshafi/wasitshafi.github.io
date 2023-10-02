@@ -3,4 +3,6 @@
 .#{$style-prefix}footer-wrapper {
 	text-align: center;
 	margin: 15px 0;
+	background-color: var(--clr-primary-background);
+	color: var(--clr-primary-font);
 }

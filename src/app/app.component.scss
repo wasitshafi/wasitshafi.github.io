@@ -11,3 +11,8 @@
 		font-size: fn-rem(18px);
 	}
 }
+
+.#{$style-prefix}app-wrapper {
+	background-color: var(--clr-primary-background);
+	color: var(--clr-primary-font);
+}

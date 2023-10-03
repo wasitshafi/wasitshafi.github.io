@@ -1,1 +1,28 @@
-<p>work experience</p>
+<section
+	id="{{ constants.homeSectionLinksId.WORK_EXPERIENCE }}"
+	class="{{ constants.STYLE_PREFIX }}work-experience-section"
+>
+	<div class="{{ constants.STYLE_PREFIX }}work-experience-section-content">
+		<div
+			*ngFor="let workExperienceData of workExperience; let i = index"
+			class="{{ constants.STYLE_PREFIX }}work-experience-details"
+		>
+			<div class="{{ constants.STYLE_PREFIX }}compay-and-role-details">
+				<span>{{ workExperienceData.role }}</span> -
+				<span>{{ workExperienceData.companyDetails.companyName }}</span>
+				<span>{{
+					workExperienceData.isCurrentlyWorking
+						? 'Present'
+						: workExperienceData.startDate + '-' + workExperienceData.endDate
+				}}</span>
+			</div>
+			<ul class="{{ constants.STYLE_PREFIX }}contributions">
+				<li
+					*ngFor="let contributionsData of workExperienceData.workContributions"
+				>
+					{{ contributionsData.description }}
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>

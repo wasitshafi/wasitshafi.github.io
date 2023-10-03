@@ -12,7 +12,6 @@ export class HomeComponent {
 	public constructor(
 		public appDataService: AppDataService,
 		public constants: Constants,
-
 		public userProfileService: UserProfileService
 	) {}
 }

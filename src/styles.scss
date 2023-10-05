@@ -1,10 +1,5 @@
 @use 'main.scss' as *;
 
-@font-face {
-	font-family: alegreya;
-	src: url('assets/fonts/alegreya-regular.ttf');
-}
-
 html {
 	scroll-behavior: smooth;
 	font-size: $fs-html;
@@ -41,4 +36,15 @@ body.#{$style-prefix}dark-theme {
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-light-icon.svg');
+}
+
+// TODO: remove it later
+section {
+	border: 1px solid $clr-wood-smoke;
+	background-color: $clr-soap-stone;
+	color: $clr-wood-smoke;
+	width: 100%;
+	min-height: 300px;
+	border-radius: 4px;
+	margin-bottom: 20px;
 }

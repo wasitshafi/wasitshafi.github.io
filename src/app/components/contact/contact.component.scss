@@ -1,1 +1,7 @@
 @use 'main.scss' as *;
+@import './contact-common.component.scss';
+
+.#{$style-prefix}contact-section {
+	&-content {
+	}
+}

@@ -1,0 +1,7 @@
+@use 'main.scss' as *;
+@import './awards-and-certifications-common.component.scss';
+
+.#{$style-prefix}awards-and-certifications-section {
+	&-content {
+	}
+}

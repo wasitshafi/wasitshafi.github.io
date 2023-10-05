@@ -1,0 +1,7 @@
+@use 'main.scss' as *;
+@import './personal-projects-common.component.scss';
+
+.#{$style-prefix}personal-projects-section {
+	&-content {
+	}
+}

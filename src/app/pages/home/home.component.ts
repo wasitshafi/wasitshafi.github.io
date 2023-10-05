@@ -6,7 +6,11 @@ import { UserProfileService, AppDataService } from '@services';
 @Component({
 	selector: 'app-home',
 	templateUrl: './home.component.html',
-	styleUrls: ['./home.component.scss', './home-responsive.component.scss'],
+	styleUrls: [
+		'./home.component.scss',
+		'./home-common.component.scss',
+		'./home-responsive.component.scss',
+	],
 })
 export class HomeComponent {
 	public constructor(

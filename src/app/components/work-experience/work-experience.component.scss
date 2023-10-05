@@ -1,4 +1,5 @@
 @use 'main.scss' as *;
+@import './work-experience-common.component.scss';
 
 .#{$style-prefix}work-experience-section {
 	&-content {

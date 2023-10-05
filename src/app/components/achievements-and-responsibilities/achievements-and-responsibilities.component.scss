@@ -1,0 +1,7 @@
+@use 'main.scss' as *;
+@import './achievements-and-responsibilities-common.component.scss';
+
+.#{$style-prefix}achievements-and-responsibilities-section {
+	&-content {
+	}
+}

@@ -1,38 +1,40 @@
 @use 'main.scss' as *;
+@import './header-common.component.scss';
 
 .#{$style-prefix}header-wrapper {
 	background-color: var(--clr-primary-background);
 	position: sticky;
 	top: 0;
+	&-content {
+		.form-check.form-switch {
+			position: absolute;
+			right: 10px;
+			top: 12px;
+			z-index: 1020; // due to sticky nav bar z-index from BS5
+			padding: 0;
+			display: flex;
+			align-items: center;
+			gap: 0 10px;
 
-	.form-check.form-switch {
-		position: absolute;
-		right: 10px;
-		top: 12px;
-		z-index: 1020; // due to sticky nav bar z-index from BS5
-		padding: 0;
-		display: flex;
-		align-items: center;
-		gap: 0 10px;
+			.form-check-input {
+				float: none;
+				margin: 0;
+			}
 
-		.form-check-input {
-			float: none;
-			margin: 0;
-		}
+			&::before,
+			&::after {
+				display: inline-block;
+				font-size: fn-rem(14px);
+				color: var(--clr-primary-font);
+			}
 
-		&::before,
-		&::after {
-			display: inline-block;
-			font-size: fn-rem(14px);
-			color: var(--clr-primary-font);
-		}
+			&::before {
+				content: 'Light';
+			}
 
-		&::before {
-			content: 'Light';
-		}
-
-		&::after {
-			content: 'Dark';
+			&::after {
+				content: 'Dark';
+			}
 		}
 	}
 }

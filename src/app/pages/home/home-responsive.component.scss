@@ -1,4 +1,5 @@
 @use 'main.scss' as *;
+@import './home-common.component.scss';
 
 // @import 'node_modules/bootstrap/scss/_mixins.scss';
 // @import 'node_modules/bootstrap/scss/_functions.scss';
@@ -17,7 +18,7 @@
 	.#{$style-prefix}home-wrapper {
 		padding-left: 16px;
 		padding-right: 16px;
-		.#{$style-prefix}home-content {
+		&-content {
 		}
 	}
 }

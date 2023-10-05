@@ -1,0 +1,7 @@
+@use 'main.scss' as *;
+@import './education-common.component.scss';
+
+.#{$style-prefix}education-section {
+	&-content {
+	}
+}

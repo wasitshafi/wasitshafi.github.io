@@ -7,6 +7,15 @@
 			constants.STYLE_PREFIX
 		}}achievements-and-responsibilities-section-content"
 	>
-		<p>achievements-and-responsibilities</p>
+		<h2>Achievements & Responsibilities</h2>
+		<ul>
+			<li
+				*ngFor="
+					let achievementsAndResponsibilitiesData of achievementsAndResponsibilities
+				"
+			>
+				{{ achievementsAndResponsibilitiesData.description }}
+			</li>
+		</ul>
 	</div>
 </section>

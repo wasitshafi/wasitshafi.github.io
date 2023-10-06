@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { Constants } from '@common';
 
+import { UserProfileService } from '@services';
+
 @Component({
 	selector: 'app-coding-and-social-profiles',
 	templateUrl: './coding-and-social-profiles.component.html',
@@ -12,5 +14,17 @@ import { Constants } from '@common';
 	],
 })
 export class CodingAndSocialProfilesComponent {
-	constructor(public constants: Constants) {}
+	public codingAndSocialProfiles: any;
+
+	constructor(
+		public constants: Constants,
+		public userProfileService: UserProfileService
+	) {
+		this.codingAndSocialProfiles =
+			this.userProfileService.portfolioData$.subscribe((data) => {
+				if (data?.codingAndSocialProfiles) {
+					this.codingAndSocialProfiles = data.codingAndSocialProfiles;
+				}
+			});
+	}
 }

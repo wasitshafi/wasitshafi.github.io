@@ -7,6 +7,11 @@
 			constants.STYLE_PREFIX
 		}}awards-and-certifications-section-content"
 	>
-		<p>awards-and-certifications</p>
+		<h2>awards-and-certifications</h2>
+		<ul>
+			<li *ngFor="let awardsAndCertificationsData of awardsAndCertifications">
+				{{ awardsAndCertificationsData.description }}
+			</li>
+		</ul>
 	</div>
 </section>

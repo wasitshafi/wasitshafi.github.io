@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { Constants } from '@common/constants';
 
+import { UserProfileService } from '@services';
+
 @Component({
 	selector: 'app-footer',
 	templateUrl: './footer.component.html',
@@ -12,5 +14,8 @@ import { Constants } from '@common/constants';
 	],
 })
 export class FooterComponent {
-	constructor(public constants: Constants) {}
+	constructor(
+		public constants: Constants,
+		public userProfileService: UserProfileService
+	) {}
 }

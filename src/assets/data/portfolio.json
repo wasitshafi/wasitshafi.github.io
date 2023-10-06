@@ -24,71 +24,71 @@
 	"awardsAndCertifications": [
 		{
 			"id": "",
-			"title": "Found bug in Electron.js while working on specific project task, reported to Electron Team on GitHub - Issue: #30277, Fixed Issue by PR: #30305."
+			"description": "Found bug in Electron.js while working on specific project task, reported to Electron Team on GitHub - Issue: #30277, Fixed Issue by PR: #30305."
 		},
 		{
 			"id": "",
-			"title": "2,53,000+ people reached Impact, 900+ Reputations on Stack Overflow."
+			"description": "2,53,000+ people reached Impact, 900+ Reputations on Stack Overflow."
 		},
 		{
 			"id": "",
-			"title": "Solved 500+ coding problems of LeetCode / HackerRank / HackerEarth / CodeChef / CodeForces / GeekForGeeks."
+			"description": "Solved 500+ coding problems of LeetCode / HackerRank / HackerEarth / CodeChef / CodeForces / GeekForGeeks."
 		},
 		{
 			"id": "",
-			"title": "Core technical team member of Knowledge Circle, JMI (2018-present) for maintaining GitHub repos & website, which includes ~100 entrance papers shared by students from across India."
+			"description": "Core technical team member of Knowledge Circle, JMI (2018-present) for maintaining GitHub repos & website, which includes ~100 entrance papers shared by students from across India."
 		},
 		{
 			"id": "",
-			"title": "Links KnowledgeCircleJamiaMilliaIslamia.github.io, github.com/KnowledgeCircleJamiaMilliaIslamia."
+			"description": "Links KnowledgeCircleJamiaMilliaIslamia.github.io, github.com/KnowledgeCircleJamiaMilliaIslamia."
 		}
 	],
 	"codingAndSocialProfiles": [
 		{
 			"id": "",
-			"platform": "LeetCode",
+			"platformName": "LeetCode",
 			"username": "wasitshafi",
 			"profileURL": "https://leetcode.com/wasitshafi/"
 		},
 		{
 			"id": "",
-			"platform": "GitHub",
+			"platformName": "GitHub",
 			"username": "wasitshafi",
 			"profileURL": "https://github.com/wasitshafi"
 		},
 		{
 			"id": "",
-			"platform": "Stack Overflow",
+			"platformName": "Stack Overflow",
 			"username": "wasitshafi",
 			"profileURL": "https://stackoverflow.com/users/10249156/wasit-shafi"
 		},
 		{
 			"id": "",
-			"platform": "HackerRank",
+			"platformName": "HackerRank",
 			"username": "wasitshafi",
 			"profileURL": "https://www.hackerrank.com/wasitshafi"
 		},
 		{
 			"id": "",
-			"platform": "HackerEarth",
+			"platformName": "HackerEarth",
 			"username": "@wasitshafi",
 			"profileURL": "https://www.hackerearth.com/@wasitshafi"
 		},
 		{
 			"id": "",
-			"platform": "CodeChef",
+			"platformName": "CodeChef",
 			"username": "wasitshafi",
 			"profileURL": "https://www.codechef.com/users/wasitshafi"
 		},
 		{
 			"id": "",
-			"platform": "LinkedIn",
+			"platformName": "LinkedIn",
 			"username": "wasitshafi",
 			"profileURL": "https://www.linkedin.com/in/wasitshafi/"
 		},
 		{
 			"id": "",
-			"platform": "Portfolio",
+			"platformName": "Portfolio",
 			"username": "wasitshafi",
 			"profileURL": "https://wasitshafi.github.io/"
 		}
@@ -119,10 +119,22 @@
 			"sourceCodeURL": "",
 			"liveProjectURL": "",
 			"projectFeatures": [
-				{ "id": "", "description": "" },
-				{ "id": "", "description": "" },
-				{ "id": "", "description": "" },
-				{ "id": "", "description": "" }
+				{
+					"id": "",
+					"description": "Project feature 1, Project feature 1, Project feature 1, Project feature 1, "
+				},
+				{
+					"id": "",
+					"description": "Project feature 2, Project feature 2, Project feature 2, "
+				},
+				{
+					"id": "",
+					"description": "Project feature 3, Project feature 3, Project feature 3, Project feature 3, Project feature 3, "
+				},
+				{
+					"id": "",
+					"description": "Project feature 4, Project feature 4, Project feature 4, Project feature 4, Project feature 4, Project feature 4, "
+				}
 			]
 		},
 		{
@@ -132,10 +144,22 @@
 			"sourceCodeURL": "",
 			"liveProjectURL": "",
 			"projectFeatures": [
-				{ "id": "", "description": "" },
-				{ "id": "", "description": "" },
-				{ "id": "", "description": "" },
-				{ "id": "", "description": "" }
+				{
+					"id": "",
+					"description": "Project feature 1, Project feature 1, Project feature 1, Project feature 1, "
+				},
+				{
+					"id": "",
+					"description": "Project feature 2, Project feature 2, Project feature 2, "
+				},
+				{
+					"id": "",
+					"description": "Project feature 3, Project feature 3, Project feature 3, Project feature 3, Project feature 3, "
+				},
+				{
+					"id": "",
+					"description": "Project feature 4, Project feature 4, Project feature 4, Project feature 4, Project feature 4, Project feature 4, "
+				}
 			]
 		}
 	],

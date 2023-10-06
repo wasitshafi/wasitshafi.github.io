@@ -1,7 +1,6 @@
 @use 'main.scss' as *;
 @import './nav-common.component.scss';
 
-
 .navbar {
 	.container-fluid {
 		padding-left: 0;
@@ -31,7 +30,7 @@
 						&:hover {
 							text-decoration: underline;
 							opacity: 0.7;
-							text-underline-offset: 3px;
+							text-decoration: none;
 						}
 
 						&.active {

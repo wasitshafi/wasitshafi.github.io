@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { Constants } from '@common';
 
+import { UserProfileService } from '@services';
+
 @Component({
 	selector: 'app-skills',
 	templateUrl: './skills.component.html',
@@ -12,5 +14,16 @@ import { Constants } from '@common';
 	],
 })
 export class SkillsComponent {
-	constructor(public constants: Constants) {}
+	public skills: any;
+
+	constructor(
+		public constants: Constants,
+		public userProfileService: UserProfileService
+	) {
+		this.skills = this.userProfileService.portfolioData$.subscribe((data) => {
+			if (data?.skills) {
+				this.skills = data.skills;
+			}
+		});
+	}
 }

@@ -3,6 +3,28 @@
 	class="{{ constants.STYLE_PREFIX }}personal-projects-section"
 >
 	<div class="{{ constants.STYLE_PREFIX }}personal-projects-section-content">
-		<p>personal-projects</p>
+		<div *ngFor="let personalProjectsData of personalProjects">
+			<h2>{{ personalProjectsData.projectTitle }}</h2>
+			<div class="d-flex justify-content-between">
+				<div>
+					<span>Deployed Project</span>
+					<span>Source Code</span>
+				</div>
+
+				<div>
+					<span>{{ personalProjectsData.startDate }}</span>
+					<span>{{ personalProjectsData.endDate }}</span>
+				</div>
+			</div>
+			<ul>
+				<li
+					*ngFor="
+						let projectFeatureDate of personalProjectsData.projectFeatures
+					"
+				>
+					{{ projectFeatureDate.description }}
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>

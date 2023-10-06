@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { Constants } from '@common';
 
+import { UserProfileService } from '@services';
+
 @Component({
 	selector: 'app-about',
 	templateUrl: './about.component.html',
@@ -12,5 +14,8 @@ import { Constants } from '@common';
 	],
 })
 export class AboutComponent {
-	constructor(public constants: Constants) {}
+	constructor(
+		public constants: Constants,
+		public userProfileService: UserProfileService
+	) {}
 }

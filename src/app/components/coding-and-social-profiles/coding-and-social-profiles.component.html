@@ -7,6 +7,17 @@
 			constants.STYLE_PREFIX
 		}}coding-and-social-profiles-section-content"
 	>
-		<p>coding-and-social-profiles</p>
+		<h2>coding-and-social-profiles</h2>
+
+		<div class="d-flex d-justify-content-between flex-wrap">
+			<div
+				class="w-50"
+				*ngFor="let codingAndSocialProfilesData of codingAndSocialProfiles"
+			>
+				<a [href]="codingAndSocialProfilesData.profileURL">{{
+					codingAndSocialProfilesData.platformName
+				}}</a>
+			</div>
+		</div>
 	</div>
 </section>

@@ -2,5 +2,27 @@
 	id="{{ constants.homeSectionLinksId.SKILLS }}"
 	class="{{ constants.STYLE_PREFIX }}skills-section"
 >
-	<div class="{{ constants.STYLE_PREFIX }}skills-section-content">Skills</div>
+	<div class="{{ constants.STYLE_PREFIX }}skills-section-content">
+		<h2>Skills</h2>
+		<!-- skills proficient with -->
+		<div>
+			<h2>Proficient With</h2>
+			<div>
+				<span
+					*ngFor="let proficientSkillsData of skills.proficient; let i = index"
+					>{{ i + 1 }}. {{ proficientSkillsData.skill }} {{ ' ' }}</span
+				>
+			</div>
+		</div>
+
+		<!--skills familiar with -->
+		<div>
+			<h2>Familiar With</h2>
+			<div>
+				<span *ngFor="let familiarSkillsData of skills.familiar; let i = index"
+					>{{ i + 1 }}. {{ familiarSkillsData.skill }} {{ ' ' }}</span
+				>
+			</div>
+		</div>
+	</div>
 </section>

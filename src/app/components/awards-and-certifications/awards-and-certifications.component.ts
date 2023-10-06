@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { Constants } from '@common';
 
+import { UserProfileService } from '@services';
+
 @Component({
 	selector: 'app-awards-and-certifications',
 	templateUrl: './awards-and-certifications.component.html',
@@ -12,5 +14,16 @@ import { Constants } from '@common';
 	],
 })
 export class AwardsAndCertificationsComponent {
-	constructor(public constants: Constants) {}
+	public awardsAndCertifications: any;
+
+	constructor(
+		public constants: Constants,
+		public userProfileService: UserProfileService
+	) {
+		this.userProfileService.portfolioData$.subscribe((data) => {
+			if (data?.awardsAndCertifications) {
+				this.awardsAndCertifications = data.awardsAndCertifications;
+			}
+		});
+	}
 }

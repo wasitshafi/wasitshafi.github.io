@@ -9,7 +9,7 @@ import { UserProfileService } from '@services';
 	templateUrl: './awards-and-certifications.component.html',
 	styleUrls: [
 		'./awards-and-certifications.component.scss',
-		'./awards-and-certifications-common.component.scss',
+		'./awards-and-certifications-shared.component.scss',
 		'./awards-and-certifications-responsive.component.scss',
 	],
 })

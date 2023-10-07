@@ -9,7 +9,7 @@ import { UserProfileService } from '@services';
 	templateUrl: './coding-and-social-profiles.component.html',
 	styleUrls: [
 		'./coding-and-social-profiles.component.scss',
-		'./coding-and-social-profiles-common.component.scss',
+		'./coding-and-social-profiles-shared.component.scss',
 		'./coding-and-social-profiles-responsive.component.scss',
 	],
 })

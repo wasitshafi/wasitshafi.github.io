@@ -1,5 +1,5 @@
 @use 'main.scss' as *;
-@import './home-common.component.scss';
+@import './home-shared.component.scss';
 
 .#{$style-prefix}home-wrapper {
 	display: flex;
@@ -12,7 +12,5 @@
 
 	.#{$style-prefix}home-content {
 		padding: 0;
-
-	
 	}
 }

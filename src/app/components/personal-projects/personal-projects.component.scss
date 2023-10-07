@@ -1,5 +1,5 @@
 @use 'main.scss' as *;
-@import './personal-projects-common.component.scss';
+@import './personal-projects-shared.component.scss';
 
 .#{$style-prefix}personal-projects-section {
 	/* stylelint-disable */

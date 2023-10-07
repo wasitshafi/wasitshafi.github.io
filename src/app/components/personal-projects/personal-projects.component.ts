@@ -9,7 +9,7 @@ import { UserProfileService } from '@services';
 	templateUrl: './personal-projects.component.html',
 	styleUrls: [
 		'./personal-projects.component.scss',
-		'./personal-projects-common.component.scss',
+		'./personal-projects-shared.component.scss',
 		'./personal-projects-responsive.component.scss',
 	],
 })

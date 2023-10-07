@@ -9,7 +9,7 @@ import { UserProfileService } from '@services';
 	templateUrl: './achievements-and-responsibilities.component.html',
 	styleUrls: [
 		'./achievements-and-responsibilities.component.scss',
-		'./achievements-and-responsibilities-common.component.scss',
+		'./achievements-and-responsibilities-shared.component.scss',
 		'./achievements-and-responsibilities-responsive.component.scss',
 	],
 })

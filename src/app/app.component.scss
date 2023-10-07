@@ -1,5 +1,5 @@
 @use 'main.scss' as *;
-@import './app-common.component.scss';
+@import './app-shared.component.scss';
 
 .#{$style-prefix}temp-section {
 	height: 100vh;

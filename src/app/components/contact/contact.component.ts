@@ -9,7 +9,7 @@ import { UserProfileService } from '@services';
 	templateUrl: './contact.component.html',
 	styleUrls: [
 		'./contact.component.scss',
-		'./contact-common.component.scss',
+		'./contact-shared.component.scss',
 		'./contact-responsive.component.scss',
 	],
 })

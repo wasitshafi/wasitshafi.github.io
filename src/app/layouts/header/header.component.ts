@@ -9,7 +9,7 @@ import { AppDataService } from '@services';
 	templateUrl: './header.component.html',
 	styleUrls: [
 		'./header.component.scss',
-		'./header-common.component.scss',
+		'./header-shared.component.scss',
 		'./header-responsive.component.scss',
 	],
 })

@@ -9,7 +9,7 @@ import { UserProfileService } from '@services';
 	templateUrl: './work-experience.component.html',
 	styleUrls: [
 		'./work-experience.component.scss',
-		'./work-experience-common.component.scss',
+		'./work-experience-shared.component.scss',
 		'./work-experience-responsive.component.scss',
 	],
 })

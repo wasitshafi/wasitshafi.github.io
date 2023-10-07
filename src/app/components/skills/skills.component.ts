@@ -9,7 +9,7 @@ import { UserProfileService } from '@services';
 	templateUrl: './skills.component.html',
 	styleUrls: [
 		'./skills.component.scss',
-		'./skills-common.component.scss',
+		'./skills-shared.component.scss',
 		'./skills-responsive.component.scss',
 	],
 })

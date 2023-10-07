@@ -1,5 +1,5 @@
 @use 'main.scss' as *;
-@import './contact-common.component.scss';
+@import './contact-shared.component.scss';
 
 .#{$style-prefix}contact-section {
 	/* stylelint-disable */

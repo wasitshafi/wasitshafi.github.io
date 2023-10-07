@@ -1,5 +1,5 @@
 @use 'main.scss' as *;
-@import './footer-common.component.scss';
+@import './footer-shared.component.scss';
 
 .#{$style-prefix}footer-wrapper {
 	&-content {

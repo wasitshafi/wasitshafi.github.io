@@ -1,5 +1,5 @@
 @use 'main.scss' as *;
-@import './skills-common.component.scss';
+@import './skills-shared.component.scss';
 
 .#{$style-prefix}skills-section {
 	/* stylelint-disable */

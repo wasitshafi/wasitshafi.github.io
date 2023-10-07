@@ -8,7 +8,7 @@ import { UserProfileService, AppDataService } from '@services';
 	templateUrl: './home.component.html',
 	styleUrls: [
 		'./home.component.scss',
-		'./home-common.component.scss',
+		'./home-shared.component.scss',
 		'./home-responsive.component.scss',
 	],
 })

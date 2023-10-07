@@ -9,7 +9,7 @@ import { UserProfileService } from '@services';
 	templateUrl: './footer.component.html',
 	styleUrls: [
 		'./footer.component.scss',
-		'./footer-common.component.scss',
+		'./footer-shared.component.scss',
 		'./footer-responsive.component.scss',
 	],
 })

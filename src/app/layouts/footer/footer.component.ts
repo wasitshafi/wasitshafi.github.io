@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Constants } from '@common/constants';
+import { Constants } from '@shared/constants';
 
 import { UserProfileService } from '@services';
 

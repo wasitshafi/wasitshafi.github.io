@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Constants } from '@common';
+import { Constants } from '@shared';
 
 import { AppDataService } from '@services';
 

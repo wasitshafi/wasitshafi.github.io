@@ -3,6 +3,10 @@
 	"rules": {
 		"unit-allowed-list": ["%", "px", "vh", "vw"],
 		"color-named": "never",
-		"color-no-invalid-hex": false
+		"color-no-invalid-hex": true,
+		"color-hex-length": "long",
+		"shorthand-property-no-redundant-values": null,
+		"declaration-no-important": true,
+		"scss/at-import-partial-extension": "always"
 	}
 }

@@ -5,9 +5,9 @@
 $fs-html: 16px;
 
 // TODO: add other fallback font with font weights
+// TODO: when finalizing the font family, check for various ext. which is of low size like .woff2, woff
 @font-face {
 	font-family: alegreya;
-	// TODO: when finalizing the font family, check for various ext. which is of low size like .woff2, woff
 	src: url('../assets/fonts/alegreya-regular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: 400;

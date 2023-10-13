@@ -1,6 +1,7 @@
 # Coding Standard and Conventions
 
 - Use barrel method to export & path aliases to make the importing precise
+- Prefix **i-** e.g: `i-user-profile.ts` to file name which includes interfaces/types/enums etc (Alternate: use `*.interface.ts` pattern for file name or use `*.d.ts` declaration file for interface).
 
 # Style Guide
 

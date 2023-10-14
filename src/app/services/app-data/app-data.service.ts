@@ -6,23 +6,25 @@ import { environment } from '@environments/environment';
 	providedIn: 'root',
 })
 export class AppDataService {
-	private isDarkThemeModeEnabled = true;
+	private isDarkThemeModeEnabled: boolean;
 
-	constructor() {}
+	constructor() {
+		this.isDarkThemeModeEnabled = true;
+	}
 
-	public toggleCurrentThemeMode() {
+	public toggleCurrentThemeMode(): void {
 		this.isDarkThemeModeEnabled = !this.isDarkThemeModeEnabled;
 	}
 
-	get getIsDarkThemeModeEnabled() {
+	get getIsDarkThemeModeEnabled(): boolean {
 		return this.isDarkThemeModeEnabled;
 	}
 
-	get isProdEnv() {
+	get isProdEnv(): boolean {
 		return environment.production;
 	}
 
-	get isDevEnv() {
+	get isDevEnv(): boolean {
 		return environment.development;
 	}
 }

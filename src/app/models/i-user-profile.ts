@@ -37,11 +37,11 @@ export interface IPersonalProject {
 
 interface IProficient extends ITemplate1 {}
 
-interface IFamilar extends ITemplate1 {}
+interface IFamiliar extends ITemplate1 {}
 
 export interface ISkill {
 	proficient: IProficient;
-	familiar: IFamilar;
+	familiar: IFamiliar;
 }
 
 interface ICompanyDetail {

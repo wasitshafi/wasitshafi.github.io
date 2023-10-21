@@ -14,7 +14,7 @@ import { UserProfileService } from '@services';
 	],
 })
 export class AwardsAndCertificationsComponent {
-	public awardsAndCertifications: any;
+	public awardsAndCertifications: any = {};
 
 	constructor(
 		public constants: Constants,

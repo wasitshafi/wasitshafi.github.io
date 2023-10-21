@@ -2,7 +2,11 @@
 @import './awards-and-certifications-shared.component.scss';
 
 .#{$style-prefix}awards-and-certifications-section {
-	/* stylelint-disable */
+	background-color: var(--clr-primary-background);
+
 	&-content {
+		.#{$style-prefix}section-title {
+			@include mx-section-title;
+		}
 	}
 }

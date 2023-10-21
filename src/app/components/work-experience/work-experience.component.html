@@ -3,19 +3,23 @@
 	class="{{ constants.STYLE_PREFIX }}work-experience-section"
 >
 	<div class="{{ constants.STYLE_PREFIX }}work-experience-section-content">
-		<h2 class="text-center">Work Experience</h2>
+		<h2 class="{{ constants.STYLE_PREFIX }}section-title">Work Experience</h2>
 		<div
 			*ngFor="let workExperienceData of workExperience; let i = index"
 			class="{{ constants.STYLE_PREFIX }}work-experience-details"
 		>
 			<div class="{{ constants.STYLE_PREFIX }}compay-and-role-details">
-				<span>{{ workExperienceData.role }}</span> -
-				<span>{{ workExperienceData.companyDetails.companyName }}</span>
-				<span>{{
-					workExperienceData.isCurrentlyWorking
-						? 'Present'
-						: workExperienceData.startDate + '-' + workExperienceData.endDate
+				<span class="{{ constants.STYLE_PREFIX }}role-details">{{
+					workExperienceData.role
 				}}</span>
+				<span class="{{ constants.STYLE_PREFIX }}company-details">
+					<span>{{ workExperienceData.companyDetails.companyName }}</span>
+					<span>{{
+						workExperienceData.isCurrentlyWorking
+							? 'Present'
+							: workExperienceData.startDate + '-' + workExperienceData.endDate
+					}}</span>
+				</span>
 			</div>
 			<ul class="{{ constants.STYLE_PREFIX }}contributions">
 				<li

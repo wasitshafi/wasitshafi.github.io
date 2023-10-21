@@ -1,0 +1,8 @@
+@use './_colors.scss' as *;
+
+// NOTE: prefix 'mx' to mixins names
+
+@mixin mx-section-title() {
+	text-align: center;
+	color: var(--clr-section-title);
+}

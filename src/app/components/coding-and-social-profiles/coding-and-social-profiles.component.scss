@@ -2,7 +2,11 @@
 @import './coding-and-social-profiles-shared.component.scss';
 
 .#{$style-prefix}coding-and-social-profiles-section {
-	/* stylelint-disable */
+	background-color: var(--clr-primary-background);
+
 	&-content {
+		.#{$style-prefix}section-title {
+			@include mx-section-title;
+		}
 	}
 }

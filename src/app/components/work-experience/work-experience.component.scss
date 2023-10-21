@@ -2,7 +2,11 @@
 @import './work-experience-shared.component.scss';
 
 .#{$style-prefix}work-experience-section {
-	/* stylelint-disable */
+	background-color: var(--clr-primary-background);
+
 	&-content {
+		.#{$style-prefix}section-title {
+			@include mx-section-title;
+		}
 	}
 }

@@ -18,12 +18,18 @@ html {
 	font-weight: 400;
 }
 
+::selection {
+	// TODO: review background color for selection later
+	background-color: $clr-teal;
+}
+
 // TODO: check how can we define these variables from individual components styles files
 // Refer why used interpolation to access scss variables : https://github.com/sass/libsass/issues/2621
 :root {
 	// colors
 	--clr-primary-background: #{$clr-soap-stone};
 	--clr-primary-font: #{$clr-wood-smoke};
+	--clr-section-title: #{$clr-rose-bud-cherry};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-dark-icon.svg');
@@ -33,6 +39,7 @@ body.#{$style-prefix}dark-theme {
 	// colors
 	--clr-primary-background: #{$clr-wood-smoke};
 	--clr-primary-font: #{$clr-soap-stone};
+	--clr-section-title: #{$clr-rose-bud-cherry};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-light-icon.svg');
@@ -41,10 +48,9 @@ body.#{$style-prefix}dark-theme {
 // TODO: remove it later
 section {
 	border: 1px solid $clr-wood-smoke;
-	background-color: $clr-soap-stone;
-	color: $clr-wood-smoke;
+	background-color: var(--clr-primary-background);
+	color: var(--clr-primary-font);
 	width: 100%;
-	min-height: 300px;
 	border-radius: 4px;
 	margin-bottom: 20px;
 }

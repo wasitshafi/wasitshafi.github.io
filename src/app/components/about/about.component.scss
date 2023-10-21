@@ -2,6 +2,8 @@
 @import './about-shared.component.scss';
 
 .#{$style-prefix}about-section {
+	background-color: var(--clr-primary-background);
+
 	&-content {
 		display: flex;
 		flex-direction: column;
@@ -26,7 +28,6 @@
 			.#{$style-prefix}name-text,
 			p,
 			p b {
-				background-color: var(--clr-primary-background);
 				color: var(--clr-primary-font);
 			}
 

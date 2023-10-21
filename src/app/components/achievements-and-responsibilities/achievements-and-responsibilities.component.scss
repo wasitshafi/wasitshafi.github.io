@@ -2,7 +2,11 @@
 @import './achievements-and-responsibilities-shared.component.scss';
 
 .#{$style-prefix}achievements-and-responsibilities-section {
-	/* stylelint-disable */
+	background-color: var(--clr-primary-background);
+
 	&-content {
+		.#{$style-prefix}section-title {
+			@include mx-section-title;
+		}
 	}
 }

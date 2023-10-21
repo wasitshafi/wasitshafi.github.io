@@ -3,7 +3,7 @@
 	class="{{ constants.STYLE_PREFIX }}education-section"
 >
 	<div class="{{ constants.STYLE_PREFIX }}education-section-content">
-		<h2 class="text-center">Education</h2>
+		<h2 class="{{ constants.STYLE_PREFIX }}section-title">Education</h2>
 		<div *ngFor="let educationData of education">
 			<h2>{{ educationData.university }}</h2>
 			<div>

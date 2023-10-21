@@ -2,7 +2,11 @@
 @import './skills-shared.component.scss';
 
 .#{$style-prefix}skills-section {
-	/* stylelint-disable */
+	background-color: var(--clr-primary-background);
+
 	&-content {
+		.#{$style-prefix}section-title {
+			@include mx-section-title;
+		}
 	}
 }

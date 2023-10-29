@@ -8,20 +8,29 @@
 			*ngFor="let workExperienceData of workExperience; let i = index"
 			class="{{ constants.STYLE_PREFIX }}work-experience-details"
 		>
-			<div class="{{ constants.STYLE_PREFIX }}compay-and-role-details">
-				<span class="{{ constants.STYLE_PREFIX }}role-details">{{
-					workExperienceData.role
-				}}</span>
-				<span class="{{ constants.STYLE_PREFIX }}company-details">
-					<span>{{ workExperienceData.companyDetails.companyName }}</span>
-					<span>{{
+			<div class="{{ constants.STYLE_PREFIX }}job-role-and-company-details">
+				<div class="{{ constants.STYLE_PREFIX }}job-role-and-tenure">
+					<span class="{{ constants.STYLE_PREFIX }}job-role">{{
+						workExperienceData.role
+					}}</span>
+					<span class="{{ constants.STYLE_PREFIX }}tenure">{{
 						workExperienceData.isCurrentlyWorking
 							? 'Present'
 							: workExperienceData.startDate + '-' + workExperienceData.endDate
 					}}</span>
-				</span>
+				</div>
+
+				<div class="{{ constants.STYLE_PREFIX }}company-details">
+					<span class="{{ constants.STYLE_PREFIX }}company-name">{{
+						workExperienceData.companyDetails.companyName
+					}}</span>
+					<span class="{{ constants.STYLE_PREFIX }}comany-location"
+						>{{ workExperienceData.companyDetails.city }},
+						{{ workExperienceData.companyDetails.country }}</span
+					>
+				</div>
 			</div>
-			<ul class="{{ constants.STYLE_PREFIX }}contributions">
+			<ul class="{{ constants.STYLE_PREFIX }}work-contributions">
 				<li
 					*ngFor="let contributionsData of workExperienceData.workContributions"
 				>

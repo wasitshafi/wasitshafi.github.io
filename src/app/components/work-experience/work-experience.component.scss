@@ -8,5 +8,21 @@
 		.#{$style-prefix}section-title {
 			@include mx-section-title;
 		}
+
+		.#{$style-prefix}work-experience-details {
+			.#{$style-prefix}job-role-and-company-details {
+				.#{$style-prefix}job-role-and-tenure,
+				.#{$style-prefix}company-details {
+					display: flex;
+					justify-content: space-between;
+
+					// .#{$style-prefix}job-role,
+					// .#{$style-prefix}tenure,
+					// .#{$style-prefix}company-name,
+					// .#{$style-prefix}comany-location {
+					// }
+				}
+			}
+		}
 	}
 }

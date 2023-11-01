@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PersonalProjectsComponent } from './personal-projects.component';
+import { PersonalProjectsComponent } from '@components';
 
 describe('PersonalProjectsComponent', () => {
-  let component: PersonalProjectsComponent;
-  let fixture: ComponentFixture<PersonalProjectsComponent>;
+	let component: PersonalProjectsComponent;
+	let fixture: ComponentFixture<PersonalProjectsComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [PersonalProjectsComponent]
-    });
-    fixture = TestBed.createComponent(PersonalProjectsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(() => {
+		TestBed.configureTestingModule({
+			declarations: [PersonalProjectsComponent],
+		});
+		fixture = TestBed.createComponent(PersonalProjectsComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });

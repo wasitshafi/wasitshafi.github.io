@@ -20,7 +20,7 @@ html {
 
 ::selection {
 	// TODO: review background color for selection later
-	background-color: $clr-teal;
+	background-color: $clr-downy;
 }
 
 // TODO: check how can we define these variables from individual components styles files
@@ -30,6 +30,7 @@ html {
 	--clr-primary-background: #{$clr-soap-stone};
 	--clr-primary-font: #{$clr-wood-smoke};
 	--clr-section-title: #{$clr-rose-bud-cherry};
+	--clr-border: #{$clr-black-30};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-dark-icon.svg');
@@ -40,6 +41,7 @@ body.#{$style-prefix}dark-theme {
 	--clr-primary-background: #{$clr-wood-smoke};
 	--clr-primary-font: #{$clr-soap-stone};
 	--clr-section-title: #{$clr-rose-bud-cherry};
+	--clr-border: #{$clr-white-30};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-light-icon.svg');

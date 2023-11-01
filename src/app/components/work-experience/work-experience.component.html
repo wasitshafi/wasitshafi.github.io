@@ -24,7 +24,7 @@
 					<span class="{{ constants.STYLE_PREFIX }}company-name">{{
 						workExperienceData.companyDetails.companyName
 					}}</span>
-					<span class="{{ constants.STYLE_PREFIX }}comany-location"
+					<span class="{{ constants.STYLE_PREFIX }}company-location"
 						>{{ workExperienceData.companyDetails.city }},
 						{{ workExperienceData.companyDetails.country }}</span
 					>
@@ -32,6 +32,7 @@
 			</div>
 			<ul class="{{ constants.STYLE_PREFIX }}work-contributions">
 				<li
+					class="{{ constants.STYLE_PREFIX }}contribution-details"
 					*ngFor="let contributionsData of workExperienceData.workContributions"
 				>
 					{{ contributionsData.description }}

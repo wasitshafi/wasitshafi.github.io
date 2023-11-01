@@ -11,16 +11,29 @@
 
 		.#{$style-prefix}work-experience-details {
 			.#{$style-prefix}job-role-and-company-details {
-				.#{$style-prefix}job-role-and-tenure,
-				.#{$style-prefix}company-details {
+				.#{$style-prefix}job-role-and-tenure {
 					display: flex;
 					justify-content: space-between;
 
-					// .#{$style-prefix}job-role,
-					// .#{$style-prefix}tenure,
-					// .#{$style-prefix}company-name,
-					// .#{$style-prefix}comany-location {
-					// }
+					.#{$style-prefix}job-role,
+					.#{$style-prefix}tenure {
+						color: var(--clr-primary-font);
+					}
+				}
+
+				.#{$style-prefix}company-details {
+					display: flex;
+					justify-content: space-between;
+					.#{$style-prefix}company-name,
+					.#{$style-prefix}company-location {
+						color: var(--clr-primary-font);
+					}
+				}
+			}
+
+			.#{$style-prefix}work-contributions {
+				.#{$style-prefix}contribution-details {
+					color: var(--clr-primary-font);
 				}
 			}
 		}

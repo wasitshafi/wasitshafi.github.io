@@ -4,25 +4,22 @@
 >
 	<div class="{{ constants.STYLE_PREFIX }}skills-section-content">
 		<h2 class="{{ constants.STYLE_PREFIX }}section-title">Skills</h2>
-		<!-- skills proficient with -->
-		<div>
-			<h2>Proficient With</h2>
-			<div>
-				<span
-					*ngFor="let proficientSkillsData of skills.proficient; let i = index"
-					>{{ i + 1 }}. {{ proficientSkillsData.skill }} {{ ' ' }}</span
-				>
-			</div>
-		</div>
+		<div class="{{ constants.STYLE_PREFIX }}skills-wrapper">
+			<!-- skills proficient with -->
 
-		<!--skills familiar with -->
-		<div>
-			<h2>Familiar With</h2>
-			<div>
-				<span *ngFor="let familiarSkillsData of skills.familiar; let i = index"
-					>{{ i + 1 }}. {{ familiarSkillsData.skill }} {{ ' ' }}</span
-				>
-			</div>
+			<span
+				class="{{ constants.STYLE_PREFIX }}skill-name"
+				*ngFor="let proficientSkillsData of skills.proficient; let i = index"
+				>{{ proficientSkillsData.skill }}</span
+			>
+			<!--skills familiar with -->
+
+			<span
+				class="{{ constants.STYLE_PREFIX }}skill-name"
+				*ngFor="let familiarSkillsData of skills.familiar; let i = index"
+			>
+				{{ familiarSkillsData.skill }}</span
+			>
 		</div>
 	</div>
 </section>

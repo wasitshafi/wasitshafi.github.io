@@ -1,16 +1,21 @@
 // NOTE: prefix 'clr' to color names, and all the colors names should be in sorted order
 
+// NOTE: for same color with different alpha values, postfix the percentage, eg black with 3% alpha values use $clr-black-03
+
 // Refer for color naming: https://colors.artyclick.com/color-name-finder/
 
+$clr-black-30: #0000004d;
 $clr-black: #000000;
 $clr-blue: #0000ff;
 $clr-cyan: #00ffff;
+$clr-downy: #66ccdd;
 $clr-green: #00ff00;
 $clr-magenta: #ff00ff;
 $clr-red: #ff0000;
 $clr-rose-bud-cherry: #85144b;
 $clr-soap-stone: #fcfcfc;
 $clr-teal: #008080;
+$clr-white-30: #ffffff4d;
 $clr-white: #ffffff;
 $clr-wood-smoke: #0c0c0c;
 $clr-yellow: #ffff00;

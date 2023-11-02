@@ -41,7 +41,10 @@
 					>
 				</li>
 
-				<li class="nav-item">
+				<li
+					class="nav-item"
+					*ngIf="appDataService.isDevEnv"
+				>
 					<a
 						class="nav-link"
 						href="#{{ constants.homeSectionLinksId.PERSONAL_PROJECTS }}"

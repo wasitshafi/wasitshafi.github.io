@@ -11,7 +11,10 @@
 		<app-skills></app-skills>
 		<!-- Personal Projects Section -->
 
-		<app-personal-projects></app-personal-projects>
+		<!-- TODO: enable personal projects in prod when there is new content for the section -->
+		<app-personal-projects
+			*ngIf="appDataService.isDevEnv"
+		></app-personal-projects>
 		<!-- Education Section -->
 
 		<app-education></app-education>

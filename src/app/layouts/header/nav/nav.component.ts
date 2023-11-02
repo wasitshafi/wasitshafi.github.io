@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { Constants } from '@shared/constants';
 
-import { UserProfileService } from '@services';
+import { UserProfileService, AppDataService } from '@services';
 
 @Component({
 	selector: 'app-nav',
@@ -15,6 +15,7 @@ import { UserProfileService } from '@services';
 })
 export class NavComponent {
 	public constructor(
+		public appDataService: AppDataService,
 		public constants: Constants,
 		public userProfileService: UserProfileService
 	) {}

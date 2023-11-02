@@ -114,51 +114,43 @@
 	"personalProjects": [
 		{
 			"projectTitle": "Face Recognition Based Attendance System",
-			"startDate": "May 2018",
-			"endDate": "July 2018",
+			"startDate": "",
+			"endDate": "",
 			"sourceCodeURL": "",
 			"liveProjectURL": "",
 			"projectFeatures": [
 				{
 					"id": "",
-					"description": "Project feature 1, Project feature 1, Project feature 1, Project feature 1, "
+					"description": "this is more detail of the personal project. this is more detail of the personal project."
 				},
 				{
 					"id": "",
-					"description": "Project feature 2, Project feature 2, Project feature 2, "
+					"description": "this is more detail of the personal project. this is more detail of the personal project."
 				},
 				{
 					"id": "",
-					"description": "Project feature 3, Project feature 3, Project feature 3, Project feature 3, Project feature 3, "
-				},
-				{
-					"id": "",
-					"description": "Project feature 4, Project feature 4, Project feature 4, Project feature 4, Project feature 4, Project feature 4, "
+					"description": "this is more detail of the personal project. this is more detail of the personal project."
 				}
 			]
 		},
 		{
 			"projectTitle": "Tweet Sentiment Analysis",
-			"startDate": "May 2019",
-			"endDate": "July 2019",
+			"startDate": "",
+			"endDate": "",
 			"sourceCodeURL": "",
 			"liveProjectURL": "",
 			"projectFeatures": [
 				{
 					"id": "",
-					"description": "Project feature 1, Project feature 1, Project feature 1, Project feature 1, "
+					"description": "this is more detail of the personal project. this is more detail of the personal project."
 				},
 				{
 					"id": "",
-					"description": "Project feature 2, Project feature 2, Project feature 2, "
+					"description": "this is more detail of the personal project. this is more detail of the personal project."
 				},
 				{
 					"id": "",
-					"description": "Project feature 3, Project feature 3, Project feature 3, Project feature 3, Project feature 3, "
-				},
-				{
-					"id": "",
-					"description": "Project feature 4, Project feature 4, Project feature 4, Project feature 4, Project feature 4, Project feature 4, "
+					"description": "this is more detail of the personal project. this is more detail of the personal project."
 				}
 			]
 		}

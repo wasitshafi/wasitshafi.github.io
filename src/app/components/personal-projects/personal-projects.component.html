@@ -4,21 +4,34 @@
 >
 	<div class="{{ constants.STYLE_PREFIX }}personal-projects-section-content">
 		<h2 class="{{ constants.STYLE_PREFIX }}section-title">Personal Projects</h2>
-		<div *ngFor="let personalProjectsData of personalProjects">
-			<h2>{{ personalProjectsData.projectTitle }}</h2>
-			<div class="d-flex justify-content-between">
-				<div>
-					<span>Deployed Project</span>
-					<span>Source Code</span>
-				</div>
-
-				<div>
-					<span>{{ personalProjectsData.startDate }}</span>
-					<span>{{ personalProjectsData.endDate }}</span>
+		<div
+			*ngFor="let personalProjectsData of personalProjects"
+			class="{{ constants.STYLE_PREFIX }}"
+		>
+			<div
+				class="{{
+					constants.STYLE_PREFIX
+				}}project-title-and-external-links-wrapper"
+			>
+				<span class="{{ constants.STYLE_PREFIX }}project-title">
+					{{ personalProjectsData.projectTitle }}
+				</span>
+				<div class="{{ constants.STYLE_PREFIX }}external-links-wrapper">
+					<a
+						href="https://github.com/wasitshafi"
+						class="{{ constants.STYLE_PREFIX }}view-deployment"
+						>View Deployment</a
+					>
+					<a
+						href="https://github.com/wasitshafi"
+						class="{{ constants.STYLE_PREFIX }}source-code"
+						>Source Code</a
+					>
 				</div>
 			</div>
-			<ul>
+			<ul class="{{ constants.STYLE_PREFIX }}personal-project">
 				<li
+					class="{{ constants.STYLE_PREFIX }}contribution-details"
 					*ngFor="
 						let projectFeatureDate of personalProjectsData.projectFeatures
 					"

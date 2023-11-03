@@ -1,7 +1,5 @@
 // NOTE: prefix 'var' to variable names
 
-// default prefix for css class names to avoid collisions with bootstrap classes
-$style-prefix: 'wsw-';
 $var-bs-breakpoints: (
 	// Extra Small (Note: In Bootstrap there is no class prefix/infix for the extra small/xs)
 	'xs-min': 0,
@@ -27,3 +25,7 @@ $var-bs-breakpoints: (
 	'xxl': 1400px,
 	'xxl-min': 1400px
 );
+$var-default-text-underline-offset: 3px;
+
+// default prefix for css class names to avoid collisions with bootstrap classes
+$var-style-prefix: 'wsw-';

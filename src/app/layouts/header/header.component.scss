@@ -1,7 +1,7 @@
 @use 'main.scss' as *;
 @import './header-shared.component.scss';
 
-.#{$style-prefix}header-wrapper {
+.#{$var-style-prefix}header-wrapper {
 	background-color: var(--clr-primary-background);
 	position: sticky;
 	top: 0;

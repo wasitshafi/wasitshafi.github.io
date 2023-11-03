@@ -1,7 +1,7 @@
 @use 'main.scss' as *;
 @import './footer-shared.component.scss';
 
-.#{$style-prefix}footer-wrapper {
+.#{$var-style-prefix}footer-wrapper {
 	&-content {
 		text-align: center;
 		margin: 15px 0;

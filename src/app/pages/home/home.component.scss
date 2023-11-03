@@ -1,7 +1,7 @@
 @use 'main.scss' as *;
 @import './home-shared.component.scss';
 
-.#{$style-prefix}home-wrapper {
+.#{$var-style-prefix}home-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -10,7 +10,7 @@
 	background-color: var(--clr-primary-background);
 	color: var(--clr-primary-font);
 
-	.#{$style-prefix}home-wrapper-content {
+	.#{$var-style-prefix}home-wrapper-content {
 		padding: 0;
 	}
 }

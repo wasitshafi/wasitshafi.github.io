@@ -1,28 +1,28 @@
 @use 'main.scss' as *;
 @import './personal-projects-shared.component.scss';
 
-.#{$style-prefix}personal-projects-section {
+.#{$var-style-prefix}personal-projects-section {
 	background-color: var(--clr-primary-background);
 
 	&-content {
-		.#{$style-prefix}section-title {
+		.#{$var-style-prefix}section-title {
 			@include mx-section-title;
 		}
 
-		.#{$style-prefix}project-title-and-external-links-wrapper {
+		.#{$var-style-prefix}project-title-and-external-links-wrapper {
 			display: flex;
 			gap: 0 10px;
 			align-items: center;
 			flex-wrap: wrap;
-			.#{$style-prefix}project-title {
+			.#{$var-style-prefix}project-title {
 				color: var(--clr-primary-font);
 			}
-			.#{$style-prefix}external-links-wrapper {
+			.#{$var-style-prefix}external-links-wrapper {
 				display: flex;
 				gap: 5px;
 
-				.#{$style-prefix}view-deployment,
-				.#{$style-prefix}source-code {
+				.#{$var-style-prefix}view-deployment,
+				.#{$var-style-prefix}source-code {
 					display: flex;
 					align-items: center;
 					color: var(--clr-primary-font);
@@ -40,8 +40,8 @@
 				}
 			}
 		}
-		.#{$style-prefix}personal-project {
-			.#{$style-prefix}contribution-details {
+		.#{$var-style-prefix}personal-project {
+			.#{$var-style-prefix}contribution-details {
 				color: var(--clr-primary-font);
 			}
 		}

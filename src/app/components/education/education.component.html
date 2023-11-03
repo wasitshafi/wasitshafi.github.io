@@ -4,11 +4,41 @@
 >
 	<div class="{{ constants.STYLE_PREFIX }}education-section-content">
 		<h2 class="{{ constants.STYLE_PREFIX }}section-title">Education</h2>
-		<div *ngFor="let educationData of education">
-			<h2>{{ educationData.university }}</h2>
-			<div>
-				{{ educationData.degree }} - {{ educationData.score }} -
-				{{ educationData.endDate }}
+		<div
+			*ngFor="let educationData of education"
+			class="{{ constants.STYLE_PREFIX }}education-details"
+		>
+			<div class="{{ constants.STYLE_PREFIX }}university-details">
+				<div
+					class="{{
+						constants.STYLE_PREFIX
+					}}university-name-and-location-wrapper"
+				>
+					<a
+						class="{{ constants.STYLE_PREFIX }}university-name"
+						target="_blank"
+						>{{ educationData.universityName }}</a
+					>
+					{{ ' ' }}
+					<a
+						class="{{ constants.STYLE_PREFIX }}university-location"
+						target="_blank"
+						>{{ educationData.universityLocation }}</a
+					>
+				</div>
+
+				<span class="{{ constants.STYLE_PREFIX }}completion-date">{{
+					educationData.completionDate
+				}}</span>
+			</div>
+			<div class="{{ constants.STYLE_PREFIX }}degree-details">
+				<span class="{{ constants.STYLE_PREFIX }}degree-name">
+					{{ educationData.degree }}
+				</span>
+				{{ ' - ' }}
+				<span class="{{ constants.STYLE_PREFIX }}degree-score">
+					{{ educationData.score }}
+				</span>
 			</div>
 		</div>
 	</div>

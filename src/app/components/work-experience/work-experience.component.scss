@@ -1,38 +1,38 @@
 @use 'main.scss' as *;
 @import './work-experience-shared.component.scss';
 
-.#{$style-prefix}work-experience-section {
+.#{$var-style-prefix}work-experience-section {
 	background-color: var(--clr-primary-background);
 
 	&-content {
-		.#{$style-prefix}section-title {
+		.#{$var-style-prefix}section-title {
 			@include mx-section-title;
 		}
 
-		.#{$style-prefix}work-experience-details {
-			.#{$style-prefix}job-role-and-company-details {
-				.#{$style-prefix}job-role-and-tenure {
+		.#{$var-style-prefix}work-experience-details {
+			.#{$var-style-prefix}job-role-and-company-details {
+				.#{$var-style-prefix}job-role-and-tenure {
 					display: flex;
 					justify-content: space-between;
 
-					.#{$style-prefix}job-role,
-					.#{$style-prefix}tenure {
+					.#{$var-style-prefix}job-role,
+					.#{$var-style-prefix}tenure {
 						color: var(--clr-primary-font);
 					}
 				}
 
-				.#{$style-prefix}company-details {
+				.#{$var-style-prefix}company-details {
 					display: flex;
 					justify-content: space-between;
-					.#{$style-prefix}company-name,
-					.#{$style-prefix}company-location {
+					.#{$var-style-prefix}company-name,
+					.#{$var-style-prefix}company-location {
 						color: var(--clr-primary-font);
 					}
 				}
 			}
 
-			.#{$style-prefix}work-contributions {
-				.#{$style-prefix}contribution-details {
+			.#{$var-style-prefix}work-contributions {
+				.#{$var-style-prefix}contribution-details {
 					color: var(--clr-primary-font);
 				}
 			}

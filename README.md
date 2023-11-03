@@ -5,7 +5,31 @@
 
 # Style Guide
 
-- All custom classes & id should prefix application constant, which should not be used hardcoded(`$style-prefix` for scss, `STYLE_PREFIX` for ts/html files )
+- All custom classes & id should prefix application constant, which should not be used hardcoded(`$var-style-prefix` for scss, `STYLE_PREFIX` for ts/html files )
+- use keyboard shortcut snippet
+
+  - ```json
+    {
+    	"key": "alt+x",
+    	"command": "editor.action.insertSnippet",
+    	"when": "editorTextFocus",
+    	"args": {
+    		"snippet": ".#{\\$var-style-prefix}$1"
+    	}
+    }
+    ```
+
+  - ```json
+    {
+    	"key": "alt+r",
+    	"command": "editor.action.insertSnippet",
+    	"when": "editorTextFocus",
+    	"args": {
+    		"snippet": "{{constants.STYLE_PREFIX}}$1"
+    	}
+    }
+    ```
+
 - Use only snake_case instead of camelCase naming convention
 - Strictly use @forward/@use instead of @import
 - Strictly use below mentioned prefixes

@@ -1,11 +1,11 @@
 @use 'main.scss' as *;
 @import './contact-shared.component.scss';
 
-.#{$style-prefix}contact-section {
+.#{$var-style-prefix}contact-section {
 	background-color: var(--clr-primary-background);
 
 	&-content {
-		.#{$style-prefix}section-title {
+		.#{$var-style-prefix}section-title {
 			@include mx-section-title;
 		}
 	}

@@ -18,6 +18,10 @@ html {
 	font-weight: 400;
 }
 
+a {
+	text-underline-offset: $var-default-text-underline-offset;
+}
+
 ::selection {
 	// TODO: review background color for selection later
 	background-color: $clr-downy;
@@ -36,7 +40,7 @@ html {
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-dark-icon.svg');
 }
 
-body.#{$style-prefix}dark-theme {
+body.#{$var-style-prefix}dark-theme {
 	// colors
 	--clr-primary-background: #{$clr-wood-smoke};
 	--clr-primary-font: #{$clr-soap-stone};

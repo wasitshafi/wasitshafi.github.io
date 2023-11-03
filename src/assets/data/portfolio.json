@@ -95,20 +95,22 @@
 	],
 	"education": [
 		{
-			"university": "Jamia Millia Islamia, New Delhi, India",
+			"universityName": "Jamia Millia Islamia",
+			"universityLocation": "New Delhi, IN",
+			"universityLocationURL": "https://maps.app.goo.gl/ZGAg8fw3MT1Lo7La8",
 			"universityWebsiteURL": "https://www.jmi.ac.in/",
 			"degree": "Master of Computer Applications",
-			"score": "8.68",
-			"scoreType": "cgpa",
-			"endDate": "June 2021"
+			"score": "8.68 CGPA",
+			"completionDate": "June 2021"
 		},
 		{
-			"university": "University of Kashmir, J&K, India",
+			"universityName": "University of Kashmir",
+			"universityLocation": "J&K, IN",
+			"universityLocationURL": "https://maps.app.goo.gl/gANpVbFtQSpPLxMb7",
 			"universityWebsiteURL": "https://www.kashmiruniversity.net/",
 			"degree": "Bachelor of Computer Applications",
-			"score": "71.47",
-			"scoreType": "percentage",
-			"endDate": "Mar 2017"
+			"score": "71.47 %",
+			"completionDate": "Mar 2017"
 		}
 	],
 	"personalProjects": [

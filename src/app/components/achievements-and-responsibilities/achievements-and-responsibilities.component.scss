@@ -1,11 +1,11 @@
 @use 'main.scss' as *;
 @import './achievements-and-responsibilities-shared.component.scss';
 
-.#{$style-prefix}achievements-and-responsibilities-section {
+.#{$var-style-prefix}achievements-and-responsibilities-section {
 	background-color: var(--clr-primary-background);
 
 	&-content {
-		.#{$style-prefix}section-title {
+		.#{$var-style-prefix}section-title {
 			@include mx-section-title;
 		}
 	}

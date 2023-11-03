@@ -1,19 +1,19 @@
 @use 'main.scss' as *;
 @import './app-shared.component.scss';
 
-.#{$style-prefix}temp-section {
+.#{$var-style-prefix}temp-section {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
-	.#{$style-prefix}fallback-text {
+	.#{$var-style-prefix}fallback-text {
 		font-size: fn-rem(18px);
 	}
 }
 
-.#{$style-prefix}app-wrapper {
+.#{$var-style-prefix}app-wrapper {
 	background-color: var(--clr-primary-background);
 	color: var(--clr-primary-font);
 }

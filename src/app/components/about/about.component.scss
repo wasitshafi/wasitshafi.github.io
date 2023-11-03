@@ -1,7 +1,7 @@
 @use 'main.scss' as *;
 @import './about-shared.component.scss';
 
-.#{$style-prefix}about-section {
+.#{$var-style-prefix}about-section {
 	background-color: var(--clr-primary-background);
 
 	&-content {
@@ -10,7 +10,7 @@
 		justify-content: center;
 		align-items: center;
 
-		.#{$style-prefix}profile-photo {
+		.#{$var-style-prefix}profile-photo {
 			height: 128px;
 			width: 128px;
 			object-fit: contain;
@@ -19,37 +19,28 @@
 			margin-bottom: 16px;
 		}
 
-		.#{$style-prefix}about-details {
+		.#{$var-style-prefix}about-details {
 			max-width: fn-rem(680px);
 			flex: 1;
 			text-align: center;
 
-			.#{$style-prefix}hello-world,
-			.#{$style-prefix}name-text,
+			.#{$var-style-prefix}hello-world,
+			.#{$var-style-prefix}name-text,
 			p,
 			p b {
 				color: var(--clr-primary-font);
 			}
 
-			.#{$style-prefix}hello-world {
+			.#{$var-style-prefix}hello-world {
 				margin: 0;
 			}
 
-			.#{$style-prefix}name-text {
+			.#{$var-style-prefix}name-text {
 				margin: 0 0 5px 0;
 			}
 
 			p {
 				margin-bottom: 8px;
-
-				a {
-					text-decoration: none;
-
-					&:hover {
-						text-decoration: underline;
-						text-underline-offset: 4px;
-					}
-				}
 			}
 		}
 	}

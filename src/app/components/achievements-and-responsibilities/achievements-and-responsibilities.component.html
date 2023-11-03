@@ -10,14 +10,20 @@
 		<h2 class="{{ constants.STYLE_PREFIX }}section-title">
 			Achievements & Responsibilities
 		</h2>
-		<ul>
+		<ul
+			class="{{
+				constants.STYLE_PREFIX
+			}}achievements-and-responsibilities-details-wrapper"
+		>
 			<li
 				*ngFor="
 					let achievementsAndResponsibilitiesData of achievementsAndResponsibilities
 				"
-			>
-				{{ achievementsAndResponsibilitiesData.description }}
-			</li>
+				class="{{
+					constants.STYLE_PREFIX
+				}}achievements-and-responsibilities-details"
+				[innerHTML]="achievementsAndResponsibilitiesData.description"
+			></li>
 		</ul>
 	</div>
 </section>

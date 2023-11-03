@@ -8,5 +8,12 @@
 		.#{$var-style-prefix}section-title {
 			@include mx-section-title;
 		}
+
+		.#{$var-style-prefix}achievements-and-responsibilities-details-wrapper {
+			.#{$var-style-prefix}achievements-and-responsibilities-details {
+				color: var(--clr-primary-font);
+				word-break: break-all;
+			}
+		}
 	}
 }

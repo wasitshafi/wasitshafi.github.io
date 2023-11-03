@@ -14,8 +14,18 @@ import { UserProfileService } from '@services';
 	],
 })
 export class ContactComponent {
+	public contactDetails: any;
+
 	constructor(
 		public constants: Constants,
 		public userProfileService: UserProfileService
-	) {}
+	) {
+		this.contactDetails = this.userProfileService.portfolioData$.subscribe(
+			(data) => {
+				if (data?.contactDetails) {
+					this.contactDetails = data.contactDetails;
+				}
+			}
+		);
+	}
 }

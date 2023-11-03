@@ -4,13 +4,14 @@
 >
 	<div class="{{ constants.STYLE_PREFIX }}contact-section-content">
 		<h2 class="{{ constants.STYLE_PREFIX }}section-title">Connect With Me</h2>
-		<p>
-			Feel free to drop me a line at
+		<div class="{{ constants.STYLE_PREFIX }}contact-details-wrapper">
 			<a
-				href="mailto:wasitshafi700@gmail.com"
+				class="{{ constants.STYLE_PREFIX }}connect-with-me-link"
+				*ngFor="let contactDetailsData of contactDetails"
+				[href]="contactDetailsData.linkURL"
 				target="_blank"
-				>wasitshafi700@gmail.com</a
+				>{{ contactDetailsData.linkText }}</a
 			>
-		</p>
+		</div>
 	</div>
 </section>

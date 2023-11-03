@@ -8,5 +8,11 @@
 		.#{$var-style-prefix}section-title {
 			@include mx-section-title;
 		}
+
+		.#{$var-style-prefix}awards-and-certifications-wrapper {
+			.#{$var-style-prefix}awards-and-certifications-details {
+				color: var(--clr-primary-font);
+			}
+		}
 	}
 }

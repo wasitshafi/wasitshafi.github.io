@@ -8,5 +8,17 @@
 		.#{$var-style-prefix}section-title {
 			@include mx-section-title;
 		}
+
+		.#{$var-style-prefix}contact-details-wrapper {
+			display: flex;
+			justify-content: space-between;
+			max-width: 500px;
+			margin: 0 auto;
+			flex-wrap: wrap;
+			gap: 0 10px;
+
+			// .#{$var-style-prefix}connect-with-me-link {
+			// }
+		}
 	}
 }

@@ -18,7 +18,7 @@
 		},
 		{
 			"id": "",
-			"description": "Links KnowledgeCircleJamiaMilliaIslamia.github.io, github.com/KnowledgeCircleJamiaMilliaIslamia."
+			"description": "Links KnowledgeCircle.github.io, github.com/KnowledgeCircle."
 		}
 	],
 	"awardsAndCertifications": [
@@ -40,7 +40,7 @@
 		},
 		{
 			"id": "",
-			"description": "Links KnowledgeCircleJamiaMilliaIslamia.github.io, github.com/KnowledgeCircleJamiaMilliaIslamia."
+			"description": "Links KnowledgeCircle.github.io, github.com/KnowledgeCircle."
 		}
 	],
 	"codingAndSocialProfiles": [
@@ -67,6 +67,18 @@
 			"platformName": "LeetCode",
 			"username": "wasitshafi",
 			"profileURL": "https://leetcode.com/wasitshafi/"
+		}
+	],
+	"contactDetails": [
+		{
+			"id": "",
+			"linkText": "wasitshafi700@gmail.com",
+			"linkURL": "mailto:wasitshafi700@gmail.com"
+		},
+		{
+			"id": "",
+			"linkText": "linkedin/wasitshafi",
+			"linkURL": "https://www.linkedin.com/in/wasitshafi/"
 		}
 	],
 	"education": [

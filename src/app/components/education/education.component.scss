@@ -1,0 +1,41 @@
+@use 'main.scss' as *;
+@import './education-shared.component.scss';
+
+.#{$var-style-prefix}education-section {
+	background-color: var(--clr-primary-background);
+
+	&-content {
+		.#{$var-style-prefix}section-title {
+			@include mx-section-title;
+		}
+
+		.#{$var-style-prefix}education-details {
+			.#{$var-style-prefix}university-details {
+				display: flex;
+				justify-content: space-between;
+				.#{$var-style-prefix}university-name-and-location-wrapper {
+					.#{$var-style-prefix}university-name {
+						font-weight: 500;
+						font-size: 18px;
+					}
+					.#{$var-style-prefix}university-location {
+						text-underline-offset: 3px;
+					}
+				}
+				.#{$var-style-prefix}completion-date {
+					color: var(--clr-primary-font);
+				}
+			}
+
+			.#{$var-style-prefix}degree-details {
+				.#{$var-style-prefix}degree-name,
+				.#{$var-style-prefix}degree-score {
+					color: var(--clr-primary-font);
+				}
+				.#{$var-style-prefix}degree-score {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}

@@ -1,10 +1,5 @@
 @use 'main.scss' as *;
 
-@font-face {
-	font-family: alegreya;
-	src: url('assets/fonts/alegreya-regular.ttf');
-}
-
 html {
 	scroll-behavior: smooth;
 	font-size: $fs-html;
@@ -23,22 +18,45 @@ html {
 	font-weight: 400;
 }
 
+a {
+	text-underline-offset: $var-default-text-underline-offset;
+}
+
+::selection {
+	// TODO: review background color for selection later
+	background-color: $clr-downy;
+}
+
 // TODO: check how can we define these variables from individual components styles files
 // Refer why used interpolation to access scss variables : https://github.com/sass/libsass/issues/2621
 :root {
 	// colors
 	--clr-primary-background: #{$clr-soap-stone};
 	--clr-primary-font: #{$clr-wood-smoke};
+	--clr-section-title: #{$clr-rose-bud-cherry};
+	--clr-border: #{$clr-black-30};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-dark-icon.svg');
 }
 
-body.#{$style-prefix}dark-theme {
+body.#{$var-style-prefix}dark-theme {
 	// colors
 	--clr-primary-background: #{$clr-wood-smoke};
 	--clr-primary-font: #{$clr-soap-stone};
+	--clr-section-title: #{$clr-rose-bud-cherry};
+	--clr-border: #{$clr-white-30};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-light-icon.svg');
+}
+
+// TODO: remove it later
+section {
+	// border: 1px solid $clr-wood-smoke;
+	background-color: var(--clr-primary-background);
+	color: var(--clr-primary-font);
+	width: 100%;
+	border-radius: 4px;
+	margin-bottom: 20px;
 }

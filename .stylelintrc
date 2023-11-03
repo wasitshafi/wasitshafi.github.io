@@ -4,11 +4,9 @@
 		"unit-allowed-list": ["%", "px", "vh", "vw"],
 		"color-named": "never",
 		"color-no-invalid-hex": true,
-		"color-no-hex": [
-			true,
-			{
-				"message": "Don't use hex colors like \"%s\" (HINT: Only hex colors are allowed & in short form if possible)"
-			}
-		]
+		"color-hex-length": "long",
+		"shorthand-property-no-redundant-values": null,
+		"declaration-no-important": true,
+		"scss/at-import-partial-extension": "always"
 	}
 }

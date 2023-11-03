@@ -1,1 +1,22 @@
-<p>awards-and-certifications</p>
+<section
+	id="{{ constants.homeSectionLinksId.AWARDS_AND_CERTIFICATIONS }}"
+	class="{{ constants.STYLE_PREFIX }}awards-and-certifications-section"
+>
+	<div
+		class="{{
+			constants.STYLE_PREFIX
+		}}awards-and-certifications-section-content"
+	>
+		<h2 class="{{ constants.STYLE_PREFIX }}section-title">
+			Awards & Certifications
+		</h2>
+
+		<ul class="{{ constants.STYLE_PREFIX }}awards-and-certifications-wrapper">
+			<li
+				class="{{ constants.STYLE_PREFIX }}awards-and-certifications-details"
+				*ngFor="let awardsAndCertificationsData of awardsAndCertifications"
+				[innerHTML]="awardsAndCertificationsData.description"
+			></li>
+		</ul>
+	</div>
+</section>

@@ -11,8 +11,8 @@ import { HomeComponent } from '@pages';
 // @layouts
 import { FooterComponent, HeaderComponent, NavComponent } from '@layouts';
 
-// @common
-import { Constants } from '@common/constants';
+// @shared
+import { Constants } from '@shared/constants';
 
 // @components
 import {

@@ -1,0 +1,20 @@
+@use 'main.scss' as *;
+@import './coding-and-social-profiles-shared.component.scss';
+
+.#{$var-style-prefix}coding-and-social-profiles-section {
+	background-color: var(--clr-primary-background);
+
+	&-content {
+		.#{$var-style-prefix}section-title {
+			@include mx-section-title;
+		}
+		.#{$var-style-prefix}profiles-wrapper {
+			max-width: 800px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 0 10px;
+		}
+	}
+}

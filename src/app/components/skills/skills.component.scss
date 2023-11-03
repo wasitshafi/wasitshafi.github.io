@@ -1,0 +1,29 @@
+@use 'main.scss' as *;
+@import './skills-shared.component.scss';
+
+.#{$var-style-prefix}skills-section {
+	background-color: var(--clr-primary-background);
+
+	&-content {
+		.#{$var-style-prefix}section-title {
+			@include mx-section-title;
+		}
+
+		.#{$var-style-prefix}skills-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			max-width: 1000px;
+			margin: 0 auto;
+
+			.#{$var-style-prefix}skill-name {
+				border: 1px solid rgba($clr-black, 0.3);
+				border: 1px solid var(--clr-border);
+				margin: 5px;
+				padding: 0 10px;
+				border-radius: 6px;
+				color: var(--clr-primary-font);
+			}
+		}
+	}
+}

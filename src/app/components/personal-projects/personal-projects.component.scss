@@ -1,0 +1,49 @@
+@use 'main.scss' as *;
+@import './personal-projects-shared.component.scss';
+
+.#{$var-style-prefix}personal-projects-section {
+	background-color: var(--clr-primary-background);
+
+	&-content {
+		.#{$var-style-prefix}section-title {
+			@include mx-section-title;
+		}
+
+		.#{$var-style-prefix}project-title-and-external-links-wrapper {
+			display: flex;
+			gap: 0 10px;
+			align-items: center;
+			flex-wrap: wrap;
+			.#{$var-style-prefix}project-title {
+				color: var(--clr-primary-font);
+			}
+			.#{$var-style-prefix}external-links-wrapper {
+				display: flex;
+				gap: 5px;
+
+				.#{$var-style-prefix}view-deployment,
+				.#{$var-style-prefix}source-code {
+					display: flex;
+					align-items: center;
+					color: var(--clr-primary-font);
+					text-decoration: none;
+					border: 1px solid var(--clr-border);
+					border-radius: 4px;
+					font-size: 12px;
+					height: 16px;
+					padding: 5px 2px;
+					line-height: 12px;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.#{$var-style-prefix}personal-project {
+			.#{$var-style-prefix}contribution-details {
+				color: var(--clr-primary-font);
+			}
+		}
+	}
+}

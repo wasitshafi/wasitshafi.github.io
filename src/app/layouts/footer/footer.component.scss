@@ -1,6 +1,11 @@
 @use 'main.scss' as *;
+@import './footer-shared.component.scss';
 
-.#{$style-prefix}footer-wrapper {
-	text-align: center;
-	margin: 15px 0;
+.#{$var-style-prefix}footer-wrapper {
+	&-content {
+		text-align: center;
+		margin: 15px 0;
+		background-color: var(--clr-primary-background);
+		color: var(--clr-primary-font);
+	}
 }

@@ -1,4 +1,5 @@
 @use 'main.scss' as *;
+@import './home-shared.component.scss';
 
 // @import 'node_modules/bootstrap/scss/_mixins.scss';
 // @import 'node_modules/bootstrap/scss/_functions.scss';
@@ -6,18 +7,19 @@
 
 // NOTE: not using BS5 mixins for media queries, due to importing 3 partials in each component file if we have to use mixin (till now didn't find any way to import in globally).
 // @include media-breakpoint-up(sm) {
-// 	.#{$style-prefix}home-wrapper {
+// 	.#{$var-style-prefix}home-wrapper {
 // 		padding: 16px;
-// 		.#{$style-prefix}home-content {
+// 		.#{$var-style-prefix}home-content {
 // 		}
 // 	}
 // }
 
 @media (min-width: fn-get-bs-breakpoints('sm-min')) {
-	.#{$style-prefix}home-wrapper {
+	.#{$var-style-prefix}home-wrapper {
 		padding-left: 16px;
 		padding-right: 16px;
-		.#{$style-prefix}home-content {
+		/* stylelint-disable */
+		&-content {
 		}
 	}
 }

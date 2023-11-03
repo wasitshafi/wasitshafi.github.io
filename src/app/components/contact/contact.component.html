@@ -1,1 +1,17 @@
-<p>contact section</p>
+<section
+	id="{{ constants.homeSectionLinksId.CONTACT }}"
+	class="{{ constants.STYLE_PREFIX }}contact-section"
+>
+	<div class="{{ constants.STYLE_PREFIX }}contact-section-content">
+		<h2 class="{{ constants.STYLE_PREFIX }}section-title">Connect With Me</h2>
+		<div class="{{ constants.STYLE_PREFIX }}contact-details-wrapper">
+			<a
+				class="{{ constants.STYLE_PREFIX }}connect-with-me-link"
+				*ngFor="let contactDetailsData of contactDetails"
+				[href]="contactDetailsData.linkURL"
+				target="_blank"
+				>{{ contactDetailsData.linkText }}</a
+			>
+		</div>
+	</div>
+</section>

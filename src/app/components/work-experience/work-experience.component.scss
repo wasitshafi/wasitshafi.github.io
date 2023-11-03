@@ -1,0 +1,41 @@
+@use 'main.scss' as *;
+@import './work-experience-shared.component.scss';
+
+.#{$var-style-prefix}work-experience-section {
+	background-color: var(--clr-primary-background);
+
+	&-content {
+		.#{$var-style-prefix}section-title {
+			@include mx-section-title;
+		}
+
+		.#{$var-style-prefix}work-experience-details {
+			.#{$var-style-prefix}job-role-and-company-details {
+				.#{$var-style-prefix}job-role-and-tenure {
+					display: flex;
+					justify-content: space-between;
+
+					.#{$var-style-prefix}job-role,
+					.#{$var-style-prefix}tenure {
+						color: var(--clr-primary-font);
+					}
+				}
+
+				.#{$var-style-prefix}company-details {
+					display: flex;
+					justify-content: space-between;
+					.#{$var-style-prefix}company-name,
+					.#{$var-style-prefix}company-location {
+						color: var(--clr-primary-font);
+					}
+				}
+			}
+
+			.#{$var-style-prefix}work-contributions {
+				.#{$var-style-prefix}contribution-details {
+					color: var(--clr-primary-font);
+				}
+			}
+		}
+	}
+}

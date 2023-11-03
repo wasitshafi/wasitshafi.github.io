@@ -1,1 +1,23 @@
-<p>coding-and-social-profiles</p>
+<section
+	id="{{ constants.homeSectionLinksId.CODING_AND_SOCIAL_PROFILES }}"
+	class="{{ constants.STYLE_PREFIX }}coding-and-social-profiles-section"
+>
+	<div
+		class="{{
+			constants.STYLE_PREFIX
+		}}coding-and-social-profiles-section-content"
+	>
+		<h2 class="{{ constants.STYLE_PREFIX }}section-title">
+			Coding & Social Profiles
+		</h2>
+
+		<div class="{{ constants.STYLE_PREFIX }}profiles-wrapper">
+			<a
+				*ngFor="let codingAndSocialProfilesData of codingAndSocialProfiles"
+				[href]="codingAndSocialProfilesData.profileURL"
+				target="_blank"
+				>{{ codingAndSocialProfilesData.platformName }}</a
+			>
+		</div>
+	</div>
+</section>

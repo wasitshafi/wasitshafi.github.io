@@ -1,0 +1,18 @@
+@use 'main.scss' as *;
+@import './achievements-and-responsibilities-shared.component.scss';
+
+.#{$var-style-prefix}achievements-and-responsibilities-section {
+	background-color: var(--clr-primary-background);
+
+	&-content {
+		.#{$var-style-prefix}section-title {
+			@include mx-section-title;
+		}
+
+		.#{$var-style-prefix}achievements-and-responsibilities-details-wrapper {
+			.#{$var-style-prefix}achievements-and-responsibilities-details {
+				color: var(--clr-primary-font);
+			}
+		}
+	}
+}

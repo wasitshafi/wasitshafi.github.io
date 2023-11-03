@@ -46,9 +46,9 @@
 	"codingAndSocialProfiles": [
 		{
 			"id": "",
-			"platformName": "LeetCode",
+			"platformName": "StackOverflow",
 			"username": "wasitshafi",
-			"profileURL": "https://leetcode.com/wasitshafi/"
+			"profileURL": "https://stackoverflow.com/users/10249156/wasit-shafi"
 		},
 		{
 			"id": "",
@@ -58,39 +58,15 @@
 		},
 		{
 			"id": "",
-			"platformName": "Stack Overflow",
-			"username": "wasitshafi",
-			"profileURL": "https://stackoverflow.com/users/10249156/wasit-shafi"
-		},
-		{
-			"id": "",
-			"platformName": "HackerRank",
-			"username": "wasitshafi",
-			"profileURL": "https://www.hackerrank.com/wasitshafi"
-		},
-		{
-			"id": "",
-			"platformName": "HackerEarth",
-			"username": "@wasitshafi",
-			"profileURL": "https://www.hackerearth.com/@wasitshafi"
-		},
-		{
-			"id": "",
 			"platformName": "CodeChef",
 			"username": "wasitshafi",
 			"profileURL": "https://www.codechef.com/users/wasitshafi"
 		},
 		{
 			"id": "",
-			"platformName": "LinkedIn",
+			"platformName": "LeetCode",
 			"username": "wasitshafi",
-			"profileURL": "https://www.linkedin.com/in/wasitshafi/"
-		},
-		{
-			"id": "",
-			"platformName": "Portfolio",
-			"username": "wasitshafi",
-			"profileURL": "https://wasitshafi.github.io/"
+			"profileURL": "https://leetcode.com/wasitshafi/"
 		}
 	],
 	"education": [

@@ -11,15 +11,13 @@
 			Coding & Social Profiles
 		</h2>
 
-		<div class="d-flex d-justify-content-between flex-wrap">
-			<div
-				class="w-50"
+		<div class="{{ constants.STYLE_PREFIX }}profiles-wrapper">
+			<a
 				*ngFor="let codingAndSocialProfilesData of codingAndSocialProfiles"
+				[href]="codingAndSocialProfilesData.profileURL"
+				target="_blank"
+				>{{ codingAndSocialProfilesData.platformName }}</a
 			>
-				<a [href]="codingAndSocialProfilesData.profileURL">{{
-					codingAndSocialProfilesData.platformName
-				}}</a>
-			</div>
 		</div>
 	</div>
 </section>

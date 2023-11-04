@@ -10,16 +10,16 @@
 			<span
 				class="{{ constants.STYLE_PREFIX }}skill-name"
 				*ngFor="let proficientSkillsData of skills.proficient; let i = index"
-				>{{ proficientSkillsData.skill }}</span
-			>
+				[innerHTML]="proficientSkillsData.skill"
+			></span>
 			<!--skills familiar with -->
 
 			<span
 				class="{{ constants.STYLE_PREFIX }}skill-name"
 				*ngFor="let familiarSkillsData of skills.familiar; let i = index"
+				[innerHTML]="familiarSkillsData.skill"
 			>
-				{{ familiarSkillsData.skill }}</span
-			>
+			</span>
 		</div>
 	</div>
 </section>

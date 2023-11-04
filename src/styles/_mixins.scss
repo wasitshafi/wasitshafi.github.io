@@ -6,3 +6,16 @@
 	text-align: center;
 	color: var(--clr-section-title);
 }
+
+@mixin mx-custom-li-marker {
+	padding-left: 12px;
+
+	// Refer below links to check the list of unicode available
+	// https://www.compart.com/en/unicode/category/So
+	// https://en.wikipedia.org/wiki/List_of_Unicode_characters
+
+	li::marker {
+		// content: '⚫  ';
+		content: '◆  ';
+	}
+}

@@ -5,6 +5,7 @@
 @mixin mx-section-title() {
 	text-align: center;
 	color: var(--clr-section-title);
+	font-family: pacifico, sans-serif;
 }
 
 @mixin mx-custom-li-marker {

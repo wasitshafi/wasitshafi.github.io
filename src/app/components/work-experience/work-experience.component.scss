@@ -18,19 +18,18 @@
 					.#{$var-style-prefix}job-role,
 					.#{$var-style-prefix}tenure {
 						color: var(--clr-primary-font);
-						border: 1px solid red;
+						font-weight: 700;
 					}
 				}
 
 				.#{$var-style-prefix}company-details {
 					display: flex;
 					justify-content: space-between;
-					border: 1px solid green;
 
 					.#{$var-style-prefix}company-name,
 					.#{$var-style-prefix}company-location {
 						color: var(--clr-primary-font);
-						border: 1px solid blue;
+						font-weight: 500;
 					}
 				}
 			}

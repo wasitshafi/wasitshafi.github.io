@@ -14,7 +14,6 @@
 				display: flex;
 				justify-content: space-between;
 				.#{$var-style-prefix}university-name-and-location-wrapper {
-					border: 1px solid orange;
 					.#{$var-style-prefix}university-name {
 						font-weight: 500;
 						font-size: 18px;
@@ -25,7 +24,6 @@
 				}
 				.#{$var-style-prefix}completion-date {
 					color: var(--clr-primary-font);
-					border: 1px solid purple;
 				}
 			}
 

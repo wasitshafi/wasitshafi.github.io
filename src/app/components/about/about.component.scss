@@ -31,6 +31,11 @@
 				color: var(--clr-primary-font);
 			}
 
+			.#{$var-style-prefix}hello-world,
+			.#{$var-style-prefix}name-text {
+				font-family: pacifico, sans-serif;
+				color: rgba($clr-black, 0.8);
+			}
 			.#{$var-style-prefix}hello-world {
 				margin: 0;
 			}

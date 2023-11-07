@@ -1,14 +1,17 @@
 @use 'sass:math';
+@import './typography/_comfortaa.scss';
+
+// TODO: review if we need lato font family
+// @import './typography/_lato.scss';
 
 // NOTE: prefix '$fs-' for all the font size variables/maps
 
 $fs-html: 16px;
 
-// TODO: add other fallback font with font weights
-// TODO: when finalizing the font family, check for various ext. which is of low size like .woff2, woff
+// TODO: review pacifico font family
 @font-face {
-	font-family: alegreya;
-	src: url('../assets/fonts/alegreya-regular.ttf') format('truetype');
+	font-family: pacifico;
+	src: url('../assets/fonts/pacifico/pacifico-regular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: 400;
 }

@@ -8,15 +8,15 @@
 	font-family: pacifico, sans-serif;
 }
 
-@mixin mx-custom-li-marker {
-	padding-left: 12px;
+// @mixin mx-custom-li-marker {
+// 	// padding-left: 12px;
 
-	// Refer below links to check the list of unicode available
-	// https://www.compart.com/en/unicode/category/So
-	// https://en.wikipedia.org/wiki/List_of_Unicode_characters
+// 	// Refer below links to check the list of unicode available
+// 	// https://symbl.cc/en/
 
-	li::marker {
-		// content: '⚫  ';
-		content: '◆  ';
-	}
-}
+// 	li::marker {
+// 		// content: '⋄ ';
+// 		// content: '⬧';
+// 		// content: '⦿ ';
+// 	}
+// }

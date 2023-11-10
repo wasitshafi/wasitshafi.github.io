@@ -35,7 +35,7 @@
 			}
 
 			.#{$var-style-prefix}work-contributions {
-				@include mx-custom-li-marker;
+				// @include mx-custom-li-marker;
 
 				.#{$var-style-prefix}contribution-details {
 					color: var(--clr-primary-font);

@@ -10,7 +10,7 @@
 		}
 
 		.#{$var-style-prefix}awards-and-certifications-wrapper {
-			@include mx-custom-li-marker;
+			// @include mx-custom-li-marker;
 			.#{$var-style-prefix}awards-and-certifications-details {
 				color: var(--clr-primary-font);
 			}

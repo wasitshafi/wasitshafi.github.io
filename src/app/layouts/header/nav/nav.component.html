@@ -1,5 +1,5 @@
-<nav class="navbar sticky-top navbar-expand-lg">
-	<div class="container-fluid">
+<nav class="container-xl navbar sticky-top navbar-expand-lg">
+	<div class="container-xl">
 		<button
 			class="navbar-toggler"
 			type="button"
@@ -11,11 +11,14 @@
 		>
 			<span class="navbar-toggler-icon"></span>
 		</button>
+
 		<div
 			class="collapse navbar-collapse"
 			id="navbar-toggler"
 		>
 			<ul class="navbar-nav">
+				<!-- About -->
+
 				<li class="nav-item">
 					<a
 						class="nav-link"
@@ -24,6 +27,7 @@
 						>About</a
 					>
 				</li>
+				<!-- Experience -->
 
 				<li class="nav-item">
 					<a
@@ -33,6 +37,8 @@
 						>Experience</a
 					>
 				</li>
+				<!-- Skills -->
+
 				<li class="nav-item">
 					<a
 						class="nav-link"
@@ -40,6 +46,7 @@
 						>Skills</a
 					>
 				</li>
+				<!-- Projects -->
 
 				<li
 					class="nav-item"
@@ -51,6 +58,8 @@
 						>Projects</a
 					>
 				</li>
+				<!-- Education -->
+
 				<li class="nav-item">
 					<a
 						class="nav-link"
@@ -58,6 +67,8 @@
 						>Education</a
 					>
 				</li>
+				<!-- Achievements -->
+
 				<li class="nav-item">
 					<a
 						class="nav-link"
@@ -67,6 +78,8 @@
 						>Achievements</a
 					>
 				</li>
+				<!-- Awards -->
+
 				<li class="nav-item">
 					<a
 						class="nav-link"
@@ -74,6 +87,8 @@
 						>Awards</a
 					>
 				</li>
+				<!-- Coding & Social Profiles -->
+
 				<li class="nav-item">
 					<a
 						class="nav-link"
@@ -83,6 +98,8 @@
 						>Coding &amp; Social Profiles</a
 					>
 				</li>
+				<!-- Contact -->
+
 				<li class="nav-item">
 					<a
 						class="nav-link"
@@ -93,5 +110,22 @@
 				</li>
 			</ul>
 		</div>
+		<!-- app theme toggler button -->
+
+		<button
+			class=" {{ constants.STYLE_PREFIX }}app-theme-toggler-button"
+			(click)="handleThemeModeChange()"
+		>
+			<img
+				alt="img"
+				[src]="
+					'../../../../assets/images/' +
+					(appDataService.getIsDarkThemeModeEnabled
+						? 'sun-dark-icon'
+						: 'moon-light-icon') +
+					'.svg'
+				"
+			/>
+		</button>
 	</div>
 </nav>

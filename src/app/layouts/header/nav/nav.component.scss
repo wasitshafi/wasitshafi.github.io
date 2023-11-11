@@ -2,7 +2,9 @@
 @import './nav-shared.component.scss';
 
 .navbar {
-	.container-fluid {
+	padding-right: calc(32px + 8px);
+
+	.container-xl {
 		padding-left: 0;
 		padding-right: 0;
 
@@ -38,6 +40,43 @@
 						}
 					}
 				}
+			}
+		}
+
+		// app theme toggler
+
+		.#{$var-style-prefix}app-theme-toggler-button {
+			height: 32px;
+			width: 32px;
+			border-radius: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: var(--clr-app-theme-toggler-background);
+			position: absolute;
+
+			// outer padding top = 8px +  4px ( 40px(height of wrapper) - 32px (height of toggler button) / 2 = 4px )
+			top: calc(8px + 4px);
+			right: 8px;
+
+			img {
+				height: 18px;
+				width: 18px;
+				border: none;
+				object-position: center;
+				object-fit: contain;
+			}
+		}
+	}
+}
+
+@media (max-width: fn-get-bs-breakpoints('md-max')) {
+	.navbar {
+		padding-right: 0;
+
+		.container-xl {
+			.#{$var-style-prefix}app-theme-toggler-button {
+				top: calc(9px);
 			}
 		}
 	}

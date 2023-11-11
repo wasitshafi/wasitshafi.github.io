@@ -35,6 +35,7 @@ a {
 	--clr-primary-font: #{$clr-wood-smoke};
 	--clr-section-title: #{$clr-rose-bud-cherry};
 	--clr-border: #{$clr-black-30};
+	--clr-app-theme-toggler-background: #{$clr-black};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-dark-icon.svg');
@@ -46,6 +47,7 @@ body.#{$var-style-prefix}dark-theme {
 	--clr-primary-font: #{$clr-soap-stone};
 	--clr-section-title: #{$clr-rose-bud-cherry};
 	--clr-border: #{$clr-white-30};
+	--clr-app-theme-toggler-background: #{$clr-white};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-light-icon.svg');

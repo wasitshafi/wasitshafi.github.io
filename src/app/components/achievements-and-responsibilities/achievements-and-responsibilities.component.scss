@@ -10,7 +10,7 @@
 		}
 
 		.#{$var-style-prefix}achievements-and-responsibilities-details-wrapper {
-			@include mx-custom-li-marker;
+			// @include mx-custom-li-marker;
 			.#{$var-style-prefix}achievements-and-responsibilities-details {
 				color: var(--clr-primary-font);
 			}

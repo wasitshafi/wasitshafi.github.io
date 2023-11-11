@@ -18,9 +18,4 @@ export class HeaderComponent {
 		public appDataService: AppDataService,
 		public constants: Constants
 	) {}
-
-	handleThemeModeChange() {
-		document.body.classList.toggle(this.constants.STYLE_PREFIX + 'dark-theme');
-		this.appDataService.toggleCurrentThemeMode();
-	}
 }

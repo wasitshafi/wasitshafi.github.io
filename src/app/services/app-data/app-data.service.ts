@@ -9,7 +9,7 @@ export class AppDataService {
 	private isDarkThemeModeEnabled: boolean;
 
 	constructor() {
-		this.isDarkThemeModeEnabled = true;
+		this.isDarkThemeModeEnabled = false;
 	}
 
 	public toggleCurrentThemeMode(): void {

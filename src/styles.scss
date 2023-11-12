@@ -29,25 +29,26 @@ a {
 
 // TODO: check how can we define these variables from individual components styles files
 // Refer why used interpolation to access scss variables : https://github.com/sass/libsass/issues/2621
+// TODO: review root color names, they should not target any specific element like section-title, primary background etc. (should be generic like name of palette in partial files )
 :root {
 	// colors
+	--clr-app-theme-toggler-background: #{$clr-dark-jungle-green};
+	--clr-border: #{$clr-black-30};
+	--clr-desert-soil: #{$clr-sand-tan-shadow};
 	--clr-primary-background: #{$clr-soap-stone};
 	--clr-primary-font: #{$clr-wood-smoke};
 	--clr-section-title: #{$clr-rose-bud-cherry};
-	--clr-border: #{$clr-black-30};
-	--clr-app-theme-toggler-background: #{$clr-black};
-
-	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-dark-icon.svg');
 }
 
 body.#{$var-style-prefix}dark-theme {
 	// colors
-	--clr-primary-background: #{$clr-wood-smoke};
+	--clr-app-theme-toggler-background: #{$clr-soap-stone};
+	--clr-border: #{$clr-white-30};
+	--clr-desert-soil: #{$clr-sand-tan};
+	--clr-primary-background: #{$clr-dark-jungle-green};
 	--clr-primary-font: #{$clr-soap-stone};
 	--clr-section-title: #{$clr-rose-bud-cherry};
-	--clr-border: #{$clr-white-30};
-	--clr-app-theme-toggler-background: #{$clr-white};
 
 	// images
 	--img-navbar-toggler: url('./assets/images/navbar-toggler-light-icon.svg');

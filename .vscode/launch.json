@@ -3,14 +3,14 @@
 	"configurations": [
 		{
 			"command": "npm start",
-			"name": "Run Script: start",
+			"name": "FE (script=start)",
 			"request": "launch",
 			"type": "node-terminal"
 		},
 		{
 			"type": "chrome",
 			"request": "launch",
-			"name": "Launch FE (type=chrome)",
+			"name": "FE (type=chrome)",
 			"url": "http://localhost:4200",
 			"webRoot": "${workspaceFolder}",
 			"preLaunchTask": "npm-start"

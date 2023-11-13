@@ -17,4 +17,9 @@ export class Constants {
 
 	// default prefix for css class names to avoid collisions with bootstrap classes
 	public STYLE_PREFIX = 'wsw-';
+
+	public applicationCurrentTheme = {
+		LIGHT: 1,
+		DARK: 2,
+	};
 }

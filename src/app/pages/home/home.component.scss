@@ -14,3 +14,24 @@
 		padding: 0;
 	}
 }
+
+.#{$var-style-prefix}back-to-top-wrapper {
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	cursor: pointer;
+	transition:
+		visibility 500ms linear,
+		opacity 500ms linear;
+	background-color: $clr-sand-tan-shadow;
+	border-radius: 6px;
+	visibility: hidden;
+	opacity: 0;
+
+	img {
+		height: 22px;
+		width: 22px;
+		object-fit: contain;
+		object-position: center;
+	}
+}

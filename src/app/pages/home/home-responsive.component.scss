@@ -23,3 +23,9 @@
 		}
 	}
 }
+
+@media (min-width: 1600px) {
+	.#{$var-style-prefix}back-to-top-wrapper {
+		left: 12w;
+	}
+}

@@ -17,8 +17,8 @@
 
 .#{$var-style-prefix}back-to-top-wrapper {
 	position: fixed;
-	bottom: 30px;
-	right: 20px;
+	bottom: 20px;
+	left: 5vw;
 	cursor: pointer;
 	transition:
 		visibility 500ms linear,

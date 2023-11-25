@@ -3,14 +3,20 @@
 	"configurations": [
 		{
 			"command": "npm start",
-			"name": "FE (script=start)",
+			"name": "Start Fontend (script = start)",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
+			"command": "npm run start-on-wifi",
+			"name": "Start Fontend (script = start-on-wifi)",
 			"request": "launch",
 			"type": "node-terminal"
 		},
 		{
 			"type": "chrome",
 			"request": "launch",
-			"name": "FE (type=chrome)",
+			"name": "Start Fontend (type=chrome)",
 			"url": "http://localhost:4200",
 			"webRoot": "${workspaceFolder}",
 			"preLaunchTask": "npm-start"
